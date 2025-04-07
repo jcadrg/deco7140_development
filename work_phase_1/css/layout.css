@@ -1,0 +1,8 @@
+/* Larger Screens (tablets or desktops) */
+
+@media(min-width: 768px) {
+  .container {
+    /* 60% of the viewport height */
+    width: 60vw;
+  }
+}
