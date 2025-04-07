@@ -80,6 +80,18 @@ button {
   cursor: pointer;
 }
 
+/* Layout */
+.container {
+  /* 100% of the viewport height */
+  height: 100vh;
+  /* 80% of the viewport width */
+  width: 80vw;
+  /* Center container horizontally */
+  margin: 0 auto;
+  /* Aquamarine background for some contrast */
+  background-color: aquamarine;
+}
+
 /*
 Reset margins, padding, and box-sizing
   {
