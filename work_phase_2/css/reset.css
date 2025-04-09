@@ -1,0 +1,103 @@
+/* ========== RESET BASELINE ========== */
+
+/* Layout CSS */
+.container {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* Core Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Reset typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* Buttons cursor + user-interaction reset */
+button {
+  cursor: pointer;
+  background: none;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Make HTML5 semantic elements display block */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* Remove default focus outlines unless customized */
+:focus {
+  outline: none;
+}
