@@ -12,9 +12,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  animation: none !important;
-  transition: none !important;
-  scroll-behavior: auto !important;
+  animation: none;
+  transition: none;
+  scroll-behavior: auto;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
