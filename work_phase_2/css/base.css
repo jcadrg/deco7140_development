@@ -32,6 +32,82 @@ p {
   color: var(--color-dark);
 }
 
+/* ----------------------------------- */
+/* Base Spacing Scale (Variables)     */
+/* ----------------------------------- */
+
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 1rem;    /* 16px */
+  --space-4: 1.5rem;  /* 24px */
+  --space-5: 3rem;    /* 48px */
+}
+
+/* ===== MARGIN HELPERS ===== */
+
+/* All sides */
+.m-0 { margin: var(--space-0); }
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-5 { margin: var(--space-5); }
+
+/* Top */
+.m-t-0 { margin-top: var(--space-0); }
+.m-t-1 { margin-top: var(--space-1); }
+.m-t-2 { margin-top: var(--space-2); }
+.m-t-3 { margin-top: var(--space-3); }
+.m-t-4 { margin-top: var(--space-4); }
+.m-t-5 { margin-top: var(--space-5); }
+
+/* Bottom */
+.m-b-0 { margin-bottom: var(--space-0); }
+/* ... repeat like above for b-1 to b-5 */
+
+/* Start */
+.m-s-0 { margin-inline-start: var(--space-0); }
+/* ... b-1 to b-5 */
+
+/* End */
+.m-e-0 { margin-inline-end: var(--space-0); }
+/* ... e-1 to e-5 */
+
+/* X = start + end */
+.m-x-0 { margin-inline: var(--space-0); }
+/* ... x-1 to x-5 */
+
+/* Y = top + bottom */
+.m-y-0 { margin-block: var(--space-0); }
+/* ... y-1 to y-5 */
+
+/* ===== PADDING HELPERS ===== */
+
+.p-0 { padding: var(--space-0); }
+.p-1 { padding: var(--space-1); }
+/* ... same structure as above */
+
+.p-t-0 { padding-top: var(--space-0); }
+/* ... p-t-1 to p-t-5 */
+
+.p-b-0 { padding-bottom: var(--space-0); }
+/* ... */
+
+.p-s-0 { padding-inline-start: var(--space-0); }
+/* ... */
+
+.p-e-0 { padding-inline-end: var(--space-0); }
+/* ... */
+
+.p-x-0 { padding-inline: var(--space-0); }
+/* ... */
+
+.p-y-0 { padding-block: var(--space-0); }
+/* ... */
+
+
 /* Responsive Design for smaller screens */
 @media (max-width: 600px) {
   h1 {

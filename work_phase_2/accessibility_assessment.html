@@ -25,16 +25,46 @@
       </ul>
     </nav>
     <div class="container">
-      <header>
-        <h1>JC's Work Phase 2</h1>
+      <header class="m-b-4">
+        <h1 class="m-b-3">Accessibility Assessment</h1>
+        <h3 class="m-b-2">This section outlines how this website adheres to WCAG 2.1 accessibility guidelines to ensure an inclusive user experience.</h3>
       </header>
-      <section>
-        <h2>What's in this website?</h2>
-        <p>
-          This is the second phase of my work. I will be completing A2 Design
-          Research during this page. But all of that assessment will be created
-          as pages in this website.
-        </p>
+
+      <section class="value-box m-b-4" aria-labelledby="perceivable">
+        <h2 id="perceivable">Principle 1: Perceivable</h2>
+        <ul>
+          <li><strong>1.1.1 Alternative Text:</strong> All non-text content includes descriptive <code>alt</code> attributes (e.g., icons, images).</li>
+          <li><strong>1.3.2 Meaningful Sequence:</strong> HTML structure uses semantic tags to ensure the reading order matches the visual layout.</li>
+          <li><strong>1.4.1 Use of Color:</strong> Information is never conveyed by color alone; text and icons are also used.</li>
+          <li><strong>1.4.3 Contrast:</strong> Sufficient contrast ratios exist between text and background colors to ensure readability.</li>
+          <li><strong>1.4.4 Resize Text:</strong> Text remains legible when zoomed up to 200% without loss of content or functionality.</li>
+        </ul>
+      </section>
+
+      <section class="value-box m-b-4" aria-labelledby="operable">
+        <h2 id="operable">Principle 2: Operable</h2>
+        <ul>
+          <li><strong>2.1.1 Keyboard Navigation:</strong> All interactive elements (like menus and cards) are accessible using a keyboard alone.</li>
+          <li><strong>2.4.7 Focus Visible:</strong> Focus indicators are preserved and clearly visible to support keyboard users.</li>
+        </ul>
+      </section>
+
+      <section class="value-box m-b-4" aria-labelledby="understandable">
+        <h2 id="understandable">Principle 3: Understandable</h2>
+        <ul>
+          <li><strong>3.1.5 Reading Level:</strong> All written content is written in plain language to accommodate users of varying literacy levels.</li>
+          <li><strong>3.2.3 Consistent Navigation:</strong> Navigation remains in the same order and style across all pages for predictability.</li>
+          <li><strong>3.2.4 Consistent Identification:</strong> Reusable UI components (buttons, cards, menus) maintain a consistent appearance and behavior.</li>
+        </ul>
+      </section>
+
+      <section class="value-box m-b-4" aria-labelledby="input-assistance">
+        <h2 id="input-assistance">Principle 4: Robust</h2>
+        <ul>
+          <li><strong>3.3.1 Error Identification:</strong> Any user input forms (e.g., future contact forms) will clearly display errors and offer guidance.</li>
+          <li><strong>3.3.2 Labels and Instructions:</strong> All form fields include clear, descriptive labels and placeholder text.</li>
+          <li><strong>3.3.4 Error Prevention:</strong> Where applicable, input validation and confirmation will be used to prevent mistakes and assist with recovery.</li>
+        </ul>
       </section>
     </div>
     <!-- Linking External JavaScript -->
