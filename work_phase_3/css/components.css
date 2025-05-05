@@ -1,0 +1,20 @@
+.hero-text {
+  text-align: center;
+  font-size: 1.125rem; /* 18px */
+  color: var(--color-subtle);
+  line-height: 1.8;
+}
+
+.hero {
+  background: linear-gradient(to bottom right, #fdfbff, #f0f4ff);
+  border-radius: 0.75rem;
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    text-align: left;
+    font-size: 1.25rem; /* 20px */
+  }
+}
