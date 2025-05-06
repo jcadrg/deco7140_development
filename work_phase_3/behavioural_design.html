@@ -9,21 +9,168 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/behavioural_design.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <title>Work Phase 3</title>
   </head>
   <body>
-    <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-    <nav id="nav-desktop" aria-label="Main Navigation"></nav>
-    <main>
-      <div class="container">
-        <h1>WP3 Behavioural Design</h1>
-      </div>
-    </main>
+    <nav id="nav-mobile" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"><span class="icon">🏠</span></a></li>
+        <li><a href="site_map.html"><span class="icon">🧭</span></a></li>
+        <li><a href="style_guide.html"><span class="icon">🎨</span></a></li>
+        <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+        <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
+      </ul>
+    </nav>
+
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">WP3 Home</a></li>
+        <li><a href="site_map.html">Site Map</a></li>
+        <li><a href="style_guide.html">Style Guide</a></li>
+        <li><a href="ethical_response.html">Ethics Response</a></li>
+        <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+      </ul>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs m-y-2 m-x-3">
+      <a href="index.html">Home</a> → 
+      <a href="style_guide.html">Style Guide</a> → 
+      <span>Behavioural Design</span>
+    </div>
+
+    <main class="container m-y-5">
+      <h1 class="hero-text">Behavioural Design</h1>
+      <p class="intro-text">The focus of this section of the Style Guide is ensuring user needs for usability and function are supported.</p>
+    
+      <!-- Sticky Anchor Nav -->
+      <nav class="section-nav">
+        <ul>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+        </ul>
+      </nav>
+    
+      <!-- ========== SECTION: LINKS ========== -->
+      <section id="links" class="component-section m-t-5">
+        <h2 class="section-title">Link Styles</h2>
+        <p>
+          Our links are designed for clarity, accessibility, and recognizability across all devices. They guide users through actions without overwhelming them, and maintain visibility across light and dark backgrounds.
+        </p>
+      
+        <div class="link-demo m-t-3">
+          <a href="#" class="link-normal">Normal Link</a>
+          <a href="#" class="link-hover">Hover State (hover me)</a>
+          <a href="#" class="link-focus" tabindex="0">Focus State (tab to me)</a>
+          <span class="link-disabled" aria-disabled="true">Disabled Link</span>
+        </div>
+      
+        <p class="annotation">
+          Each state (normal, hover, focus, disabled) supports user expectations and accessibility. 
+          Links meet WCAG 1.4.3 (contrast), 2.4.4 (link purpose), and 2.1.1 (keyboard access). 
+          Focus rings help keyboard users, while hover effects aid mouse navigation. Disabled links are visually distinct and non-interactive.
+        </p>
+      </section>
+      
+      <!-- ========== SECTION: NAVIGATION ========== -->
+      <section id="navigation" class="m-y-5">
+        <h2 class="section-title">Menus and Navigation</h2>
+        <p>
+          The navigation reflects the sites information architecture and supports usability through clear labels and grouping.
+          It ensures users can move efficiently through the platform, with consideration for screen readers and keyboard users.
+        </p>
+      
+        <div class="mockup-wrapper">
+          <img src="images/nav_mockup.png" alt="Navigation mock-up showing menu layout and hierarchy" class="img-fluid m-t-3">
+          <p class="annotation">
+            This screenshot displays a horizontal navigation bar with clear section labels and hover states. It emphasizes visual grouping,
+            supporting recognition over recall, and aligns with WCAG guidelines for accessibility.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== SECTION: CARDS ========== -->
+      <section id="cards" class="m-y-5">
+        <h2 class="section-title">Card Components</h2>
+        <p>
+          Cards help organize content into manageable, bite-sized sections. They summarize key data and provide entry points to deeper engagement or detailed views.
+          We use them to present hobby projects, event listings, or community posts in a clean, digestible format.
+        </p>
+      
+        <!-- Placeholder for card mock-up -->
+        <div class="mockup-wrapper placeholder-box m-t-3">
+          <p class="placeholder-text">[ Insert card layout screenshot here ]</p>
+        </div>
+      
+        <p class="annotation">
+          The mock-up will demonstrate consistent spacing, clear hierarchy (title, body, CTA), and optional metadata like time or tags.
+          Cards are styled to visually group related content while remaining accessible with screen readers and keyboard navigation.
+        </p>
+      </section>      
+    
+      <!-- ========== SECTION: ICONS ========== -->
+      <section id="icons" class="component-section m-t-5">
+        <h2>Icons</h2>
+        <p>Icons enhance quick recognition. They are paired with text or include aria-labels for accessibility.</p>
+    
+        <img src="images/icons-mockup.png" alt="Icons in context" class="img-fluid" />
+    
+        <p class="annotation">
+          Icons follow strong signifier principles. Where used alone, they are supplemented with accessible labels for WCAG 1.1.1 compliance.
+        </p>
+      </section>
+    
+      <!-- ========== SECTION: BUTTONS ========== -->
+      <section id="form" class="component-section m-t-5">
+        <h2>Join the Community</h2>
+        <p>This form allows users to join the community by submitting their name, email, and an optional message or photo.</p>
+      
+        <form id="community-form">
+          <!-- Name (Required) -->
+          <div class="form-group m-b-3">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required />
+          </div>
+      
+          <!-- Email (Required) -->
+          <div class="form-group m-b-3">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+      
+          <!-- Message (Optional) -->
+          <div class="form-group m-b-3">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+      
+          <!-- Photo Upload (Optional) -->
+          <div class="form-group m-b-3">
+            <label for="photo">Upload Photo (optional, max 10MB)</label>
+            <input type="file" id="photo" name="photo" accept="image/*" />
+          </div>
+      
+          <!-- Submit Button -->
+          <button type="submit" class="btn-primary">Join Now</button>
+      
+          <!-- Feedback Message -->
+          <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>    
+    
     <section>
       <a href="../index.html">Back</a>
     </section>
+    <script type="module" src="./js/behavioural_design.js"></script>
   </body>
 </html>
