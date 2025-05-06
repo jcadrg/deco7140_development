@@ -1,0 +1,22 @@
+@import "../component_skeletons/card.css";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: var(--space-4) var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .card {
+    flex: 0 1 calc(33.333% - 1.5rem);
+    box-sizing: border-box;
+  }
+}

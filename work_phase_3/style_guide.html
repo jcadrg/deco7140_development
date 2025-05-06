@@ -9,21 +9,68 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/style_guide.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <title>Work Phase 3</title>
   </head>
   <body>
-    <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-    <nav id="nav-desktop" aria-label="Main Navigation"></nav>
+    <nav id="nav-mobile" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"><span class="icon">🏠</span></a></li>
+        <li><a href="site_map.html"><span class="icon">🧭</span></a></li>
+        <li><a href="style_guide.html" aria-current="page"><span class="icon">🎨</span></a></li>
+        <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+        <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
+      </ul>
+    </nav>
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">WP3 Home</a></li>
+        <li><a href="site_map.html">Site Map</a></li>
+        <li><a href="style_guide.html" aria-current="page">Style Guide</a></li>
+        <li><a href="ethical_response.html">Ethics Response</a></li>
+        <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+      </ul>
+    </nav>
     <main>
       <div class="container">
-        <h1>WP3 Style Guide</h1>
+        <h1 class="page-title m-b-4">Style Guide</h1>
+        <p class="m-b-5">
+          This style guide presents the core design philosophies behind HobbyHub. It includes insights into our visual and interactive decisions, based on CCI's brief and user research.
+        </p>
+        <div class="card-container">
+          <article class="card">
+            <h2 class="card-title">Visceral Design</h2>
+            <p class="card-desc">
+              How our platform creates an immediate emotional impact through colors, layout, and visual clarity. Tailored to feel welcoming, energetic, and cozy for all hobbyists.
+            </p>
+            <a href="./visceral_design.html" class="card-link">Explore Visceral →</a>
+          </article>
+    
+          <article class="card">
+            <h2 class="card-title">Behavioural Design</h2>
+            <p class="card-desc">
+              Focused on usability, accessibility, and task flow. How users interact with the interface, complete goals, and navigate smoothly through the platform.
+            </p>
+            <a href="./behavioural_design.html" class="card-link">Explore Behavioural →</a>
+          </article>
+    
+          <article class="card">
+            <h2 class="card-title">Reflective Design</h2>
+            <p class="card-desc">
+              Long-term impact and meaning. How users see themselves and their work reflected in the platform, aligning with identity, pride, and personal value.
+            </p>
+            <a href="./reflective_design.html" class="card-link">Explore Reflective →</a>
+          </article>
+        </div>
       </div>
-    </main>
+    </main>    
     <section>
       <a href="../index.html">Back</a>
     </section>
+    <script type="module" src="./js/style_guide.js"></script>
   </body>
 </html>

@@ -9,21 +9,168 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/visceral_design.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-    <title>Work Phase 3</title>
+    <title>Visceral Design – HobbyHub</title>
   </head>
   <body>
-    <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-    <nav id="nav-desktop" aria-label="Main Navigation"></nav>
+    <!-- Navigation -->
+    <nav id="nav-mobile" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"><span class="icon">🏠</span></a></li>
+        <li><a href="site_map.html"><span class="icon">🧭</span></a></li>
+        <li><a href="style_guide.html"><span class="icon">🎨</span></a></li>
+        <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+        <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
+      </ul>
+    </nav>
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">WP3 Home</a></li>
+        <li><a href="site_map.html">Site Map</a></li>
+        <li><a href="style_guide.html">Style Guide</a></li>
+        <li><a href="ethical_response.html">Ethics Response</a></li>
+        <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+      </ul>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs m-y-2 m-x-3">
+      <a href="index.html">Home</a> → 
+      <a href="style_guide.html">Style Guide</a> → 
+      <span>Visceral Design</span>
+    </div>
+
+    <!-- Main Content -->
     <main>
       <div class="container">
-        <h1>WP3 Visceral Design</h1>
+        <h1 class="page-title m-b-4">Visceral Design</h1>
+        <p class="m-b-3">
+          The focus of this section of the Style Guide is ensuring the user has a strong emotional connection at first glance. 
+          This includes using color, imagery, layout, and typography to spark immediate engagement and interest.
+        </p>
+        <p>
+          Our approach is inspired by Don Norman’s Emotional Design theory. 
+          This page explains how we translated that theory into interface decisions for HobbyHub, particularly for the homepage and trending areas.
+        </p>
+        <article>
+          <h2 class="m-t-3">Page Layouts</h2>
+          <!-- gallery of small images -->
+          <section class="gallery m-t-3">
+            <img src="./images/DECO 7140 Wireframes - Explore.jpg" alt="Explore Projects wireframe — discovery-focused layout showing filters and project cards. Supports user needs for visibility, inspiration, and community feedback." />
+            <img src="./images/DECO 7140 Wireframes - Help & Platform support.jpg" alt="Help & Platform Support wireframe — low-pressure support section enabling user safety, guidance, and feedback, aligned with client goal of inclusivity and accessibility." />
+            <img src="./images/DECO 7140 Wireframes - Home:Landing.jpg" alt="Home page wireframe — welcoming entry point with call-to-action, categories, and featured content. Designed for first impressions, orientation, and cross-user engagement." />
+            <img src="./images/DECO 7140 Wireframes - Learn & Inspire.jpg" alt="Learn & Inspire wireframe — structured guide layout supporting creative growth, flexible learning, and peer-driven inspiration. Addresses needs of both beginners and advanced hobbyists." />
+          </section>
+          <aside class="viewer" id="viewer" aria-hidden="true">
+            <button id="close-viewer" aria-label="Close image viewer">✖</button>
+            <img id="viewer-img" src="" alt="" />
+            <p id="viewer-caption"></p>
+          </aside>
+      </article>
+      <article class="m-t-5">
+        <h2 class="section-title">Colour Scheme</h2>
+        <p class="m-b-3">
+          Our colour scheme was chosen to evoke warmth, energy, and approachability, aligning with CCI’s goal for a welcoming and inclusive platform.
+          The palette uses soft contrasts for accessibility and vibrant highlights to draw user attention without overwhelming.
+        </p>
+      
+        <div class="color-palette-grid">
+          <div class="color-swatch" style="--swatch-color: var(--color-primary);">
+            <p class="swatch-name-white">Primary</p>
+            <p class="swatch-hex-white">#4B3F72</p>
+            <p class="swatch-desc-white">
+              Used for titles, accents, and key UI highlights. Conveys reliability and focus. Important for high-contrast accessibility.
+            </p>
+          </div>
+      
+          <div class="color-swatch" style="--swatch-color: var(--color-accent);">
+            <p class="swatch-name-white">Accent</p>
+            <p class="swatch-hex-white">#F18F01</p>
+            <p class="swatch-desc-white">
+              Brings playful energy to CTAs, links, and hover effects. Supports user's need for visual encouragement and delight.
+            </p>
+          </div>
+      
+          <div class="color-swatch" style="--swatch-color: var(--color-muted);">
+            <p class="swatch-name">Muted</p>
+            <p class="swatch-hex">#EDEDED</p>
+            <p class="swatch-desc">
+              Used for card backgrounds and soft borders. Keeps the interface clean and low-pressure for casual users.
+            </p>
+          </div>
+      
+          <div class="color-swatch" style="--swatch-color: var(--color-surface);">
+            <p class="swatch-name">Surface</p>
+            <p class="swatch-hex">#FFFFFF</p>
+            <p class="swatch-desc">
+              Base background for most UI components. Balances clarity and neutrality, aiding content visibility and legibility.
+            </p>
+          </div>
+      
+          <div class="color-swatch" style="--swatch-color: var(--color-dark);">
+            <p class="swatch-name-white">Dark</p>
+            <p class="swatch-hex-white">#2E2E2E</p>
+            <p class="swatch-desc-white">
+              Used for headings and body text. Ensures accessibility and readability across all devices and lighting conditions.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="typography m-t-4">
+        <h2 class="section-title">Typography</h2>
+        <p class="m-b-3">
+          Our typography choices focus on readability, clarity, and emotional resonance. They align with the platform's need to feel both professional and inviting, supporting a range of users from casual hobbyists to dedicated community contributors.
+        </p>
+      
+        <div class="type-grid">
+          <div class="type-card">
+            <h1 class="type-sample heading-xl">Heading XL</h1>
+            <p class="type-meta">Font: Nunito, 48px, Extra Bold</p>
+            <p class="type-description">Used for hero titles, homepage banners, and major CTAs. Captures immediate attention.</p>
+          </div>
+      
+          <div class="type-card">
+            <h2 class="type-sample heading-lg">Heading Large</h2>
+            <p class="type-meta">Font: Nunito, 36px, Bold</p>
+            <p class="type-description">Used for section titles and key UI prompts. Balances visibility and information hierarchy.</p>
+          </div>
+      
+          <div class="type-card">
+            <h3 class="type-sample heading-md">Heading Medium</h3>
+            <p class="type-meta">Font: Nunito, 28px, Semi-Bold</p>
+            <p class="type-description">Used for sub-sections and component titles. Guides the eye without overwhelming.</p>
+          </div>
+      
+          <div class="type-card">
+            <p class="type-sample body-lg">Body Large</p>
+            <p class="type-meta">Font: Nunito, 20px, Regular</p>
+            <p class="type-description">Used for descriptions, intros, and platform guidance text. Supports scannability.</p>
+          </div>
+      
+          <div class="type-card">
+            <p class="type-sample body-md">Body Medium</p>
+            <p class="type-meta">Font: Nunito, 16px, Regular</p>
+            <p class="type-description">Default paragraph text. Optimized for readability across devices.</p>
+          </div>
+      
+          <div class="type-card">
+            <p class="type-sample caption">Caption</p>
+            <p class="type-meta">Font: Nunito, 12px, Medium</p>
+            <p class="type-description">Used for meta labels, image alt descriptions, and low-emphasis info.</p>
+          </div>
+        </div>
+      </article>      
       </div>
     </main>
-    <section>
-      <a href="../index.html">Back</a>
+
+    <!-- Optional: Back button -->
+    <section class="m-y-4 m-x-3">
+      <a href="style_guide.html" class="button-link">← Back to Style Guide</a>
     </section>
+
+    <script type="module" src="./js/visceral_design.js"></script>
   </body>
 </html>
