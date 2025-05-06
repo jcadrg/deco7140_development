@@ -9,21 +9,333 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/site_map.css" />
+
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <title>Work Phase 3</title>
   </head>
   <body>
-    <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-    <nav id="nav-desktop" aria-label="Main Navigation"></nav>
+    <nav id="nav-mobile" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"><span class="icon">🏠</span></a></li>
+        <li><a href="site_map.html" aria-current="page"><span class="icon">🧭</span></a></li>
+        <li><a href="style_guide.html"><span class="icon">🎨</span></a></li>
+        <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+        <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
+      </ul>
+    </nav>
+
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">WP3 Home</a></li>
+        <li><a href="site_map.html" aria-current="page">Site Map</a></li>
+        <li><a href="style_guide.html">Style Guide</a></li>
+        <li><a href="ethical_response.html">Ethics Response</a></li>
+        <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
+      </ul>
+    </nav>
     <main>
       <div class="container">
-        <h1>WP3 Site Map</h1>
+        <h1>Site Map</h1>
+        <p>
+          This site map provides a visual representation of the structure and
+          content of the HobbyHub website. It serves as a guide to help users
+          navigate through the various sections and features available on the
+          site.
+        </p>
+        <img src="images/site-map.jpg" class="responsive-img" alt="Post it style site map">
+        <p>
+          This accordion shows the website structure.
+          Expand each section to view pages and sub-pages, with notes on user/client needs
+        </p>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Home</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                    Landing page that sets the tone of the community. Features CTA and Intro <br> Supports first impressions, user orientation, low barrier entry for casual users. <br> Client goal: Welcoming and inclusive vibe.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Hero Section</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Intro area that sets the tone and invites users to join or explore easily.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Trending projects</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Highlights active and exciting content, keeping returning users engaged.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Browse by visual category</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Provides an intuitive, low-pressure way to explore based on interest or aesthetics.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Explore</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Discovery hub for exploring other users' creations. Encourages interaction, inspiration, and feedback. <br> Supports needs of browsing and connection feel, exposure to like minded people's projects and ideas. Client goal of encouraging sharing and discovery.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">View public projects</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Full access to the community’s creations for open discovery and inspiration.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Filter by category or tag</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Lets users quickly find projects relevant to their interests or hobbies.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Sort by newest/featured</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Promotes visibility and relevance by surfacing trending or popular content.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Create & Share</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Dedicated space for users to publish their hobbies and creations. Core engagement area. <br> Supports the user's needs to contribute, meaningfully, build reputation. Client goal of user-driven content.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">"Create project" editor</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Core tool for building and publishing user-generated content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Upload pics/videos/media</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Enables visual storytelling and documentation of hobby work.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Add steps, description, and tools</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Supports tutorial-style sharing for educational or replicable projects.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Tag project with interest/topic</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Improves discoverability and connects content to broader themes.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Community & Social</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Heart of the community building effort. Enables users to connect, engage, and feel seen. <br> Supports encouragement, hype and drive, thoughtfu connection. Client emphasis on low pressure but meaningful interaction.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Follow users</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Facilitates ongoing connection and personalization of the experience.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header"> Like & comment on posts</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Drives feedback, motivation, and conversational engagement.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Create or join interest-based groups</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Encourages micro-communities where users feel seen and supported.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Messaging</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Enables deeper interactions, planning, and social bonding in context.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Learn & Inspire</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Provides structured learning and featured content for those seeking growth and new ideas. <br> Supports knowledge sharing, exchange, learning and improving. Client's goal of flexible inspiration where all skill levels are welcome.              
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Highlighted guides</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Editorial picks or expert content to spark exploration and learning.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Themed projects</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Curated collections around a common hobby, goal, or event.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Guides & tutorials</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Practical how-to resources that build skills and confidence.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">My Hub</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Personalized area for users to track and manage their activities and content. <br> Organization needs, content management, and client desire for autonomy and platform familiarity.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">My projects</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Central space for managing and revisiting personal contributions.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Edit profile</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Allows users to present themselves in a way that reflects their interests.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Activity history</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Gives users a timeline of their actions to reflect or retrace.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Saved projects & bookmarks</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Personal archive for future inspiration or project planning.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="accordion m-y-5">
+          <div class="accordion-item">
+            <button class="accordion-header">Help & Platform Support</button>
+            <div class="accordion-content">
+                <p class="m-y-3">
+                  Support and feedback tools to ensure accessibility, safety, and responsiveness. <br> Patience and assistance, support all user's right to feel safe and heard. Goal of an inclusive, user-first platform.
+                </p>
+                <!-- Nested Accordion for Sub-pages -->
+                <div class="accordion nested">
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Contact</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Direct channel for support or general inquiries.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Feedback</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Empowers users to shape platform improvements with their voice.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Report an issue</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Safety tool to flag inappropriate or broken elements of the site.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion nested">
+                  <div class="accordion-item">
+                    <button class="accordion-header">Platform guidelines</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">Outlines expected conduct and values to maintain a healthy space.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
       </div>
     </main>
+
     <section>
       <a href="../index.html">Back</a>
     </section>
+    <script type="module" src="./js/site_map.js"></script>
   </body>
 </html>

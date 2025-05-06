@@ -1,0 +1,110 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-item {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* .accordion-header {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+} */
+
+.accordion-header {
+  padding: 1rem 1.25rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: var(--color-info);
+  color: white;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow-y: hidden; /* Prevent scrollbars while collapsed */
+  padding: 0 1.25rem; /* Matches accordion-header spacing */
+  background-color: var(--color-surface);
+  font-size: 1rem; /* Consistent with your base paragraph size */
+  line-height: 1.7;
+  color: var(--color-dark);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+  padding: 1rem 1.25rem;
+}
+
+.accordion-item.open .accordion-content {
+  padding: 1rem;
+  max-height: 500px;
+}
+
+.accordion-header::after {
+  content: "▸";
+  float: right;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-header::after {
+  transform: rotate(90deg);
+}
+
+.accordion.nested {
+    margin-left: 1rem;
+    border-left: 3px solid var(--color-info);
+    padding-left: 1rem;
+}
+
+.accordion.nested .accordion-header {
+    background-color: var(--color-primary); /* Strong contrast from parent */
+    color: var(--color-surface); /* Keep it readable */
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.accordion.nested .accordion-header:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.accordion.nested .accordion-content {
+    background-color: var(--color-surface); 
+    color: var(--color-dark);
+    border: 1px solid var(--color-primary);
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem;
+    max-height: 500px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

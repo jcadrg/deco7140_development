@@ -5,13 +5,6 @@
   line-height: 1.8;
 }
 
-/* .hero {
-  background: linear-gradient(to bottom right, #fdfbff, #f0f4ff);
-  border-radius: 0.75rem;
-  padding: var(--space-4);
-  margin-bottom: var(--space-5);
-} */
-
 .hero {
   background: linear-gradient(to bottom right, #fdfbff, #f0f4ff);
   padding: var(--space-4);
@@ -52,6 +45,13 @@ nav ul {
 
 .nav-links a:hover {
   color: var(--color-primary);
+}
+
+/* Responsive image */
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive control */
