@@ -9,17 +9,178 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/reflective_design.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <title>Work Phase 3</title>
   </head>
   <body>
-    <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-    <nav id="nav-desktop" aria-label="Main Navigation"></nav>
+    <nav id="nav-mobile" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"><span class="icon">🏠</span></a></li>
+        <li><a href="site_map.html"><span class="icon">🧭</span></a></li>
+        <li><a href="style_guide.html"><span class="icon">🎨</span></a></li>
+        <li><a href="ethical_response.html"><span class="icon">⚖️</span></a></li>
+        <li><a href="genai_mt_aknowledgement.html"><span class="icon">🤖</span></a></li>
+      </ul>
+    </nav>
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">WP3 Home</a></li>
+        <li><a href="site_map.html">Site Map</a></li>
+        <li><a href="style_guide.html">Style Guide</a></li>
+        <li><a href="ethical_response.html">Ethics Response</a></li>
+        <li><a href="genai_mt_aknowledgement.html">GenAI</a></li>
+      </ul>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs m-y-2 m-x-3">
+      <a href="index.html">Home</a> → 
+      <a href="style_guide.html">Style Guide</a> → 
+      <span>Reflective Design</span>
+    </div>
     <main>
       <div class="container">
         <h1>WP3 Reflective Design</h1>
+        <article class="m-t-4">
+          <h2 class="section-title">Values and Design Reflection</h2>
+          <p class="m-b-4">
+            This section connects our client and user values with specific design choices made across HobbyHub. Each decision reinforces a deeper emotional and cultural resonance, ensuring our site is more than functional — it’s meaningful.
+          </p>
+        
+          <div class="values-table">
+            <div class="table-header">
+              <div class="cell">Value</div>
+              <div class="cell">Design Implication</div>
+              <div class="cell">Specific Element</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">Belonging</div>
+              <div class="cell">Users should feel part of a supportive, shared-interest space</div>
+              <div class="cell">Group creation, user profiles, & welcome banner</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">Creativity</div>
+              <div class="cell">Encourage showcasing personal projects and expression</div>
+              <div class="cell">“Create a Project” flow and custom project cards</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">Curiosity</div>
+              <div class="cell">Showcase other users' creations and highlight trending content</div>
+              <div class="cell">Explore page with filters and featured projects</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">Encouragement</div>
+              <div class="cell">All skill levels are welcomed and valued</div>
+              <div class="cell">Tooltips, supportive copy, and accessible form design</div>
+            </div>
+            <div class="table-row">
+              <div class="cell">Contribution</div>
+              <div class="cell">Make sharing easy and rewarding</div>
+              <div class="cell">Step-by-step creation form and user recognition features</div>
+            </div>
+          </div>
+        </article>
+        <article class="reflective-intro m-t-4">
+          <h2 class="section-title">Identity and Emotional Tone</h2>
+          <p class="m-b-3">
+            HobbyHub aims to project an identity rooted in <strong>belonging, creativity, encouragement, and curiosity</strong>.
+            Our tone is warm, inclusive, and empowering—designed to uplift hobbyists of all levels, encouraging both expression and connection.
+          </p>
+          <p class="m-b-4">
+            The emotional atmosphere is intentionally cozy and collaborative, ensuring users feel welcome whether they are showcasing a project or seeking inspiration.
+          </p>
+        </article>
+        
+        <article class="homepage-text m-b-5">
+          <h2 class="section-title">Example Homepage Text</h2>
+          <blockquote class="homepage-message">
+            "HobbyHub — A creative space where your passions matter. Share your latest project, discover others like you, and connect with a community that celebrates creativity in all forms."
+          </blockquote>
+          <p class="annotation m-t-2">
+            This message uses warm, encouraging language to reinforce emotional safety and belonging, aligning with the values identified through user research.
+          </p>
+        </article>
+        
+        <article class="imagery m-t-5">
+          <h2 class="section-title">Imagery</h2>
+          <p class="m-b-4">Below are curated imagery sets that align with our emotional tone and platform identity.</p>
+        
+          <section class="image-set m-b-5">
+            <h3>User Showcase</h3>
+            <div class="image-gallery">
+              <img src="images/user-showcase1.jpg"/>
+              <img src="images/user-showcase2.jpg"/>
+              <img src="images/user-showcase3.jpg"/>
+            </div>
+            <p class="annotation">
+              These images promote belonging and validation, reinforcing the site as a place where users are seen and celebrated.
+            </p>
+          </section>
+        
+          <section class="image-set m-b-5">
+            <h3>Creative Collaboration</h3>
+            <div class="image-gallery">
+              <img src="images/creative-collab1.jpg"/>
+              <img src="images/creative-collab2.jpg"/>
+              <img src="images/creative-collab3.jpg"/>
+            </div>
+            <p class="annotation">
+              Highlights inclusivity and teamwork, reflecting CC Imagery's goal of fostering connections through shared hobbies.
+            </p>
+          </section>
+        
+          <section class="image-set m-b-5">
+            <h3>DIY</h3>
+            <div class="image-gallery">
+              <img src="images/hands-on-making-1.jpg"/>
+              <img src="images/hands-on-making-2.jpg"/>
+              <img src="images/hands-on-making-3.jpg"/>
+            </div>
+            <p class="annotation">
+              These visuals empower users with the confidence to start something new and reinforce the site's educational and inspirational goals.
+            </p>
+          </section>
+        </article>
+        <article class="language-section m-t-5">
+          <h2 class="section-title">Language and Expression</h2>
+          <p class="m-b-4">
+            This section outlines how our use of language aligns with inclusive design principles, supporting the values and accessibility goals of HobbyHub.
+          </p>
+        
+          <h3 class="m-b-2">Inclusive Language Checklist</h3>
+          <ul class="checklist m-b-4">
+            <li>✅ Use person-first language (e.g., "person with disability").</li>
+            <li>✅ Use gender-neutral terms (e.g., "creator" instead of "maker").</li>
+            <li>✅ Avoid stereotypes or euphemisms.</li>
+            <li>✅ Write in plain language for better accessibility.</li>
+            <li>✅ Acknowledge cultural and linguistic diversity respectfully.</li>
+            <li>✅ Consult appropriate communities where necessary.</li>
+          </ul>
+        
+          <h3 class="m-b-2">Original Homepage Text</h3>
+          <blockquote class="example-box">
+            HobbyHub — A creative space where your passions matter.<br>
+            Share your latest project, discover others like you, and connect with a community that celebrates creativity in all forms.
+          </blockquote>
+        
+          <h3 class="m-t-4 m-b-2">Revised Homepage Text</h3>
+          <blockquote class="example-box">
+            HobbyHub — A creative space where your passions belong<br>
+            Share what you're working on, explore diverse creations, and connect with a supportive community that values creativity in all its forms.
+          </blockquote>
+        
+          <h3 class="m-t-4 m-b-2">Annotation</h3>
+          <p class="annotation">
+            The revised version promotes inclusivity by using gender-neutral and plain language. It removes assumptions about hobbies and encourages a wide range of users to feel welcome and understood. These updates support the client's inclusive mission and align with WCAG 3.1.1 for language clarity. <br>
+            Using “belong” instead of “matter” to promote a sense of acceptance and community (linked to the value of belonging). <br>
+            Replacing “your latest project” with “what you’re working on” to remove pressure and embrace all skill levels (linked to the value of encouragement). <br>
+            Including “diverse creations” to reflect a culturally inclusive environment and acknowledge varied user backgrounds (supports curiosity and creativity).
+          </p>
+        </article>                        
       </div>
     </main>
     <section>
