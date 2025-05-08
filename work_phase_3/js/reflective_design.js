@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'card mb-3';
         card.innerHTML = `
+            <img src="${member.photo}" alt="Project by ${member.name}" />
             <div class="card-body">
             <h5 class="card-title">${member.name}</h5>
             <p class="card-text">${member.message || 'No message provided.'}</p>
