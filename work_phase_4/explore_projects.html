@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explore Projects | HobbyHub</title>
 
     <!-- CSS Linking -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -13,109 +12,88 @@
     <link rel="stylesheet" href="css/page_css/explore.css" />
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Explore Projects</title>
   </head>
-
   <body>
-    <!-- Navigation -->
-    <nav id="nav-desktop" aria-label="Main Navigation">
+    <nav id="nav-desktop">
       <div class="nav-logo">HobbyHub</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="explore.html" class="nav-item active">Explore</a></li>
+        <li><a class="nav-item active" href="explore.html">Explore</a></li>
         <li><a href="#">Create & Share</a></li>
-        <li>
-          <input
-            type="search"
-            placeholder="Search projects or creators..."
-            aria-label="Search"
-          />
-        </li>
       </ul>
+      <input type="text" placeholder="Search projects or creators…" />
     </nav>
 
-    <main>
-      <div class="container m-t-5">
-        <!-- Hero Section -->
-        <section class="hero m-b-5">
-          <div class="hero-content">
-            <h1 class="m-b-2">Explore Projects</h1>
-            <p class="hero-text">
-              Discover and engage with projects shared by creators across
-              categories: crafts, tech, books, and more.
-            </p>
-          </div>
-        </section>
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero m-t-5 m-b-4 p-4">
+        <h1 class="page-title">Explore Projects</h1>
+        <p class="hero-text">
+          Discover and engage with projects shared by creators across categories: crafts, tech, books, and more.
+        </p>
+      </section>
 
-        <!-- Filter Section -->
-        <section class="filters m-b-5">
-          <h2>Filter</h2>
-          <div class="filter-buttons m-y-3">
-            <button class="btn btn-outline">All</button>
-            <button class="btn btn-outline">Workshop</button>
-            <button class="btn btn-outline">Outdoors</button>
-            <button class="btn btn-outline">Craft</button>
-          </div>
-          <div class="filter-dropdowns m-y-3">
-            <select>
-              <option>Category</option>
-            </select>
-            <select>
-              <option>Tags</option>
-            </select>
-            <select>
-              <option>Sort By</option>
-            </select>
-            <select>
-              <option>Project Format</option>
-            </select>
-          </div>
-        </section>
+      <!-- Filter Controls -->
+      <section class="filter-controls m-b-4">
+        <div class="filter-buttons">
+          <button class="btn">All</button>
+          <button class="btn">Workshop</button>
+          <button class="btn">Outdoors</button>
+          <button class="btn">Craft</button>
+        </div>
+        <div class="filter-selects m-t-3">
+          <select class="form-control">
+            <option>Category</option>
+          </select>
+          <select class="form-control">
+            <option>Tags</option>
+          </select>
+          <select class="form-control">
+            <option>Sort By</option>
+          </select>
+          <select class="form-control">
+            <option>Project Format</option>
+          </select>
+        </div>
+      </section>
 
-        <!-- Project Grid -->
-        <section class="project-grid m-b-5">
-          <div class="card">
-            <div class="card-thumbnail"></div>
-            <h4 class="card-title">Project</h4>
-            <p class="card-meta">By creator in Category.</p>
+      <!-- Project Grid -->
+      <section class="project-grid">
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-body">
+            <h5 class="card-title">Project</h5>
+            <p class="card-text">By creator in Category.</p>
           </div>
-          <!-- More cards here -->
-        </section>
+        </div>
+        <!-- Add more .card elements as needed -->
+      </section>
 
-        <!-- Featured Creators -->
-        <section class="featured-creators">
-          <h2 class="m-b-4">Featured Creators</h2>
-          <div class="creator-grid">
-            <div class="creator-card">
-              <div class="creator-photo"></div>
-              <h5>Creator Name</h5>
-              <small>Featured Project</small>
+      <!-- Featured Creators -->
+      <section class="featured-creators m-y-5">
+        <h2 class="m-b-3">Featured Creators</h2>
+        <div class="card-row">
+          <div class="card featured-card">
+            <div class="card-img"></div>
+            <div class="card-body">
+              <h5 class="card-title">Creator Name</h5>
+              <p class="card-text">Featured project</p>
             </div>
-            <!-- More creator cards -->
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer m-t-5">
-      <div class="footer-grid">
-        <div>
-          <p>
-            Let’s stay in touch! Sign up to our newsletter and get the best
-            deals!
-          </p>
-          <div class="footer-logo">Logo</div>
-          <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-          </div>
+    <footer class="footer p-4">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <p>Let's stay in touch! Sign up to our newsletter and get the best deals!</p>
+          <input type="text" placeholder="Insert your email address here" class="form-control m-t-2" />
+          <button class="btn m-t-2">Subscribe now</button>
         </div>
-        <div>
-          <input type="email" placeholder="Insert your email address here" />
-          <button class="btn btn-primary">Subscribe Now</button>
-        </div>
-        <div>
-          <h5>Help</h5>
+        <div class="footer-col">
+          <h4>Help</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Customer Service</a></li>
@@ -123,8 +101,8 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div>
-          <h5>Other</h5>
+        <div class="footer-col">
+          <h4>Other</h4>
           <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Sitemap</a></li>

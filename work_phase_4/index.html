@@ -3,16 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work Phase 4</title>
-    <section>
-      <h1>JC's Work Phase 4</h1>
-      <h2>What's in this website?</h2>
-    </section>
+    <title>Explore Projects | HobbyHub</title>
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/explore.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   </head>
+
   <body>
-    <p>This is the fourth phase of my work.</p>
-    <section>
-      <a href="../index.html">Back</a>
-    </section>
+    <!-- Navigation -->
+    <nav id="nav-desktop" aria-label="Main Navigation">
+      <div class="nav-logo">HobbyHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" class="nav-item active">Explore</a></li>
+        <li><a href="#">Create & Share</a></li>
+        <li>
+          <input
+            type="search"
+            placeholder="Search projects or creators..."
+            aria-label="Search"
+          />
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container m-t-5">
+        <!-- Hero Section -->
+        <section class="hero m-b-5">
+          <div class="hero-content">
+            <h1 class="m-b-2">Explore Projects</h1>
+            <p class="hero-text">
+              Discover and engage with projects shared by creators across
+              categories: crafts, tech, books, and more.
+            </p>
+          </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters m-b-5">
+          <h2>Filter</h2>
+          <div class="filter-buttons m-y-3">
+            <button class="btn btn-outline">All</button>
+            <button class="btn btn-outline">Workshop</button>
+            <button class="btn btn-outline">Outdoors</button>
+            <button class="btn btn-outline">Craft</button>
+          </div>
+          <div class="filter-dropdowns m-y-3">
+            <select>
+              <option>Category</option>
+            </select>
+            <select>
+              <option>Tags</option>
+            </select>
+            <select>
+              <option>Sort By</option>
+            </select>
+            <select>
+              <option>Project Format</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Project Grid -->
+        <section class="project-grid m-b-5">
+          <div class="card">
+            <div class="card-thumbnail"></div>
+            <h4 class="card-title">Project</h4>
+            <p class="card-meta">By creator in Category.</p>
+          </div>
+          <!-- More cards here -->
+        </section>
+
+        <!-- Featured Creators -->
+        <section class="featured-creators">
+          <h2 class="m-b-4">Featured Creators</h2>
+          <div class="creator-grid">
+            <div class="creator-card">
+              <div class="creator-photo"></div>
+              <h5>Creator Name</h5>
+              <small>Featured Project</small>
+            </div>
+            <!-- More creator cards -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer m-t-5">
+      <div class="footer-grid">
+        <div>
+          <p>
+            Let’s stay in touch! Sign up to our newsletter and get the best
+            deals!
+          </p>
+          <div class="footer-logo">Logo</div>
+          <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+        <div>
+          <input type="email" placeholder="Insert your email address here" />
+          <button class="btn btn-primary">Subscribe Now</button>
+        </div>
+        <div>
+          <h5>Help</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">How to Guides</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Other</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
