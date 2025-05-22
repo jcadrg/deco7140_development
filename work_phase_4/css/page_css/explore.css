@@ -1,0 +1,142 @@
+/* =============================
+   Explore Page Styling (explore.css)
+   ============================= */
+
+/* === Page Title and Hero === */
+.page-header {
+  padding: var(--space-4) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.page-header p {
+  font-size: 1.125rem;
+  color: var(--color-subtle);
+}
+
+/* === Filters === */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.filters label {
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 0.25rem;
+}
+
+.filters select,
+.filters .filter-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-muted);
+  background-color: var(--color-surface);
+  color: var(--color-dark);
+}
+
+.filters .filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.filters .filter-buttons button.active {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* === Project Grid === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.project-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: var(--space-2);
+}
+
+.project-info h3 {
+  font-size: 1.125rem;
+  color: var(--color-dark);
+  margin-bottom: 0.25rem;
+}
+
+.project-info p {
+  color: var(--color-subtle);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* === Featured Creators === */
+.featured-creators {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-muted);
+}
+
+.creator-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.creator-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  border-radius: 8px;
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.creator-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.creator-card .creator-info {
+  padding: var(--space-2);
+}
+
+.creator-card .creator-info h4 {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.creator-card .creator-info small {
+  color: var(--color-subtle);
+  font-size: 0.85rem;
+}
