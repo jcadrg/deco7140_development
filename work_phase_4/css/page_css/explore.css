@@ -4,14 +4,51 @@
 .filter-controls {
   background-color: var(--color-bg);
   padding: var(--space-4);
-  border-radius: 8px;
+  border-radius: 0.75rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.tag-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.tag-filters button {
+  background: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-dark);
+  transition: background 0.2s;
+}
+
+.tag-filters button:hover {
+  background-color: var(--color-info);
+  color: white;
+}
+
+.dropdown-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .filter-buttons {
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
+}
+
+.dropdown-filters select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-muted);
+  font-size: 1rem;
+  color: var(--color-dark);
 }
 
 .btn {
@@ -51,7 +88,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: var(--space-4);
+  gap: 1.5rem;
   margin-top: var(--space-4);
 }
 
@@ -89,6 +126,14 @@
   color: var(--color-subtle);
 }
 
+.project-card {
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
 /* FEATURED CREATORS */
 .featured-creators .card-row {
   display: flex;
@@ -100,6 +145,49 @@
 .featured-card .card-img {
   height: 120px;
   background-color: var(--color-muted);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-thumb {
+  height: 150px;
+  background-color: var(--color-muted);
+}
+
+.project-info {
+  padding: var(--space-3);
+}
+
+/* CREATORS SECTION */
+.featured-creators {
+  margin-top: var(--space-5);
+}
+
+.creator-cards {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.creator-card {
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 220px;
+  overflow: hidden;
+}
+
+.creator-thumb {
+  height: 140px;
+  background-color: var(--color-muted);
+}
+
+.creator-info {
+  padding: var(--space-3);
+  text-align: center;
 }
 
 /* FOOTER */

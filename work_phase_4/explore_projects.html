@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/page_css/explore.css" />
-
+    <link rel="stylesheet" href="css/component_skeletons/floating_search_button.css"/>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Explore Projects</title>
   </head>
@@ -22,74 +22,98 @@
         <li><a class="nav-item active" href="explore.html">Explore</a></li>
         <li><a href="#">Create & Share</a></li>
       </ul>
-      <input type="text" placeholder="Search projects or creators…" />
     </nav>
 
-    <main class="container">
-      <!-- Hero Section -->
-      <section class="hero m-t-5 m-b-4 p-4">
-        <h1 class="page-title">Explore Projects</h1>
-        <p class="hero-text">
-          Discover and engage with projects shared by creators across categories: crafts, tech, books, and more.
-        </p>
-      </section>
+    <main>
+      <!-- Explore Hero Section -->
+      <div class="container m-t-5 m-b-5">
+        <header class="hero">
+          <h1>Explore Projects</h1>
+          <p class="hero-text">
+            Discover and engage with projects shared by creators across
+            categories: crafts, tech, books, and more.
+          </p>
+        </header>
+      </div>
 
       <!-- Filter Controls -->
-      <section class="filter-controls m-b-4">
-        <div class="filter-buttons">
-          <button class="btn">All</button>
-          <button class="btn">Workshop</button>
-          <button class="btn">Outdoors</button>
-          <button class="btn">Craft</button>
-        </div>
-        <div class="filter-selects m-t-3">
-          <select class="form-control">
-            <option>Category</option>
-          </select>
-          <select class="form-control">
-            <option>Tags</option>
-          </select>
-          <select class="form-control">
-            <option>Sort By</option>
-          </select>
-          <select class="form-control">
-            <option>Project Format</option>
-          </select>
-        </div>
-      </section>
+      <div class="container m-b-5">
+        <section class="filter-controls">
+          <h2>Filter</h2>
+          <div class="tag-filters m-t-2">
+            <button>All</button>
+            <button>Workshop</button>
+            <button>Outdoors</button>
+            <button>Craft</button>
+          </div>
+          <div class="dropdown-filters m-t-3">
+            <select>
+              <option>Category</option>
+            </select>
+            <select>
+              <option>Tags</option>
+            </select>
+            <select>
+              <option>Sort By</option>
+            </select>
+            <select>
+              <option>Project Format</option>
+            </select>
+          </div>
+        </section>
+      </div>
 
       <!-- Project Grid -->
-      <section class="project-grid">
-        <div class="card">
-          <div class="card-img"></div>
-          <div class="card-body">
-            <h5 class="card-title">Project</h5>
-            <p class="card-text">By creator in Category.</p>
-          </div>
-        </div>
-        <!-- Add more .card elements as needed -->
-      </section>
-
-      <!-- Featured Creators -->
-      <section class="featured-creators m-y-5">
-        <h2 class="m-b-3">Featured Creators</h2>
-        <div class="card-row">
-          <div class="card featured-card">
-            <div class="card-img"></div>
-            <div class="card-body">
-              <h5 class="card-title">Creator Name</h5>
-              <p class="card-text">Featured project</p>
+      <div class="container m-b-5">
+        <section class="project-grid">
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="project-info">
+              <h4>Project</h4>
+              <small>By creator in Category.</small>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <!-- Featured Creators -->
+      <div class="container m-b-5">
+        <section class="featured-creators">
+          <h2>Featured Creators</h2>
+          <div class="creator-cards">
+            <div class="creator-card">
+              <div class="creator-thumb"></div>
+              <div class="creator-info">
+                <h5>Creator Name</h5>
+                <small>Featured Project</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Floating Search Button -->
+      <div class="floating-search">
+        <button id="toggleSearch" class="search-toggle">Search</button>
+        <form class="search-form">
+          <input type="text" placeholder="Search projects or creators..." aria-label="Search input" />
+          <button type="submit">Go</button>
+        </form>
+      </div>
     </main>
 
     <footer class="footer p-4">
       <div class="footer-columns">
         <div class="footer-col">
-          <p>Let's stay in touch! Sign up to our newsletter and get the best deals!</p>
-          <input type="text" placeholder="Insert your email address here" class="form-control m-t-2" />
+          <p>
+            Let's stay in touch! Sign up to our newsletter and get the best
+            deals!
+          </p>
+          <input
+            type="text"
+            placeholder="Insert your email address here"
+            class="form-control m-t-2"
+          />
           <button class="btn m-t-2">Subscribe now</button>
         </div>
         <div class="footer-col">
@@ -111,5 +135,11 @@
         </div>
       </div>
     </footer>
+
+    <script
+      type="module"
+      src="js/components/floating_search_button.js"
+    ></script>
   </body>
 </html>
+

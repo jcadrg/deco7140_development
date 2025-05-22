@@ -1,0 +1,82 @@
+/* Floating Search Button Styles */
+
+.floating-search {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.search-toggle {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+  background-color: var(--color-surface);
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.floating-search.active .search-form {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.search-form input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--color-muted);
+  color: var(--color-dark);
+  width: 200px;
+}
+
+.search-form button {
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 600px) {
+  .floating-search {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .search-form input[type="text"] {
+    width: 140px;
+  }
+}
