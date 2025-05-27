@@ -1,12 +1,23 @@
 /* Floating Search Button Styles */
 
-.floating-search {
+/* .floating-search {
   position: fixed;
   bottom: 2rem;
   left: 2rem;
   display: flex;
   align-items: center;
   z-index: 1000;
+  cursor: move;
+  user-select: none;
+} */
+
+.floating-search {
+  position: fixed;
+  top: 6rem; /* or adjust for your header/nav height */
+  left: 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 
 .search-toggle {
@@ -74,6 +85,11 @@
   .floating-search {
     left: 1rem;
     bottom: 1rem;
+    top: 5rem;
+  }
+
+  .container {
+    margin-top: 8rem;
   }
 
   .search-form input[type="text"] {

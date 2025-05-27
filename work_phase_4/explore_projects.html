@@ -16,25 +16,57 @@
   </head>
   <body>
     <nav id="nav-desktop">
-      <div class="nav-logo">HobbyHub</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="nav-item active" href="explore.html">Explore</a></li>
-        <li><a href="#">Create & Share</a></li>
-      </ul>
+      <div class="nav-upper">
+        <div class="nav-logo">HobbyHub</div>
+      </div>
+      <div id="nav-container">
+        <div class="nav-search">
+          <input type="text" placeholder="Search projects or creators!" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html" class="nav-item active">Explore</a></li>
+          <li><a href="#">Create & Share</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Learn & Inspire</a></li>
+          <li><a href="#">My Hub</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </nav>
+    <!-- Floating Search Button -->
+    <!-- <div class="floating-search" id="floatingSearch">
+      <button id="toggleSearch" class="search-toggle">Search!</button>
+      <form class="search-form">
+        <input type="text" placeholder="Search projects or creators..." aria-label="Search input" />
+        <button type="submit">Go</button>
+      </form>
+    </div> -->
 
     <main>
-      <!-- Explore Hero Section -->
-      <div class="container m-t-5 m-b-5">
-        <header class="hero">
-          <h1>Explore Projects</h1>
-          <p class="hero-text">
-            Discover and engage with projects shared by creators across
-            categories: crafts, tech, books, and more.
-          </p>
-        </header>
+    <!-- Explore Hero Section -->
+    <section class="hero-split">
+      <div class="hero-left">
+        <h1>Explore Projects</h1>
+        <p>
+          Discover and engage with projects shared by creators across categories: crafts, tech, books, and more.
+        </p>
       </div>
+      <div class="hero-right carousel">
+        <div class="carousel-track">
+          <img src="./assets/img/hero-img-1.png" alt="Project Preview 1" class="carousel-slide active" />
+          <img src="./assets/img/hero-img-2.jpg" alt="Project Preview 2" class="carousel-slide" />
+          <img src="./assets/img/hero-img-3.jpg" alt="Project Preview 3" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
 
       <!-- Filter Controls -->
       <div class="container m-b-5">
@@ -91,15 +123,6 @@
           </div>
         </section>
       </div>
-
-      <!-- Floating Search Button -->
-      <div class="floating-search">
-        <button id="toggleSearch" class="search-toggle">Search</button>
-        <form class="search-form">
-          <input type="text" placeholder="Search projects or creators..." aria-label="Search input" />
-          <button type="submit">Go</button>
-        </form>
-      </div>
     </main>
 
     <footer class="footer p-4">
@@ -135,11 +158,8 @@
         </div>
       </div>
     </footer>
-
-    <script
-      type="module"
-      src="js/components/floating_search_button.js"
-    ></script>
+    <script src="./js/explore_projects.js"></script>
+    <script type="module" src="js/components/floating_search_button.js"></script>
   </body>
 </html>
 
