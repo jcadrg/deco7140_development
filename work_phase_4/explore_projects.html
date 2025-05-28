@@ -25,7 +25,7 @@
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="explore.html" class="nav-item active">Explore</a></li>
+          <li><a href="explore_projects.html" class="nav-item active">Explore</a></li>
           <li><a href="#">Create & Share</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Learn & Inspire</a></li>
@@ -34,127 +34,64 @@
         </ul>
       </div>
     </nav>
-    <!-- Floating Search Button -->
-    <!-- <div class="floating-search" id="floatingSearch">
-      <button id="toggleSearch" class="search-toggle">Search!</button>
-      <form class="search-form">
-        <input type="text" placeholder="Search projects or creators..." aria-label="Search input" />
-        <button type="submit">Go</button>
-      </form>
-    </div> -->
 
     <main>
-    <!-- Explore Hero Section -->
-    <section class="hero-split">
-      <div class="hero-left">
-        <h1>Explore Projects</h1>
-        <p>
-          Discover and engage with projects shared by creators across categories: crafts, tech, books, and more.
-        </p>
-      </div>
-      <div class="hero-right carousel">
-        <div class="carousel-track">
-          <img src="./assets/img/hero-img-1.png" alt="Project Preview 1" class="carousel-slide active" />
-          <img src="./assets/img/hero-img-2.jpg" alt="Project Preview 2" class="carousel-slide" />
-          <img src="./assets/img/hero-img-3.jpg" alt="Project Preview 3" class="carousel-slide" />
-        </div>
-        <button class="carousel-btn prev">‹</button>
-        <button class="carousel-btn next">›</button>
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </section>
-
       <!-- Filter Controls -->
-      <div class="container m-b-5">
+      <div class="project-container m-b-5">
         <section class="filter-controls">
-          <h2>Filter</h2>
+          <h2>You can select a category to narrow down your search!</h2>
           <div class="tag-filters m-t-2">
-            <button>All</button>
-            <button>Workshop</button>
-            <button>Outdoors</button>
-            <button>Craft</button>
+            <button class="filter-tab" data-category="all">All</button>
+            <button class="filter-tab active" data-category="circuits">Circuits</button>
+            <button class="filter-tab" data-category="workshop">Workshop</button>
+            <button class="filter-tab" data-category="craft">Craft</button>
           </div>
           <div class="dropdown-filters m-t-3">
-            <select>
-              <option>Category</option>
-            </select>
-            <select>
-              <option>Tags</option>
-            </select>
-            <select>
-              <option>Sort By</option>
-            </select>
-            <select>
-              <option>Project Format</option>
+            <select id="subcategory-dropdown">
+              <option>Select a subcategory</option>
             </select>
           </div>
         </section>
       </div>
-
       <!-- Project Grid -->
-      <div class="container m-b-5">
-        <section class="project-grid">
-          <div class="project-card">
-            <div class="project-thumb"></div>
-            <div class="project-info">
-              <h4>Project</h4>
-              <small>By creator in Category.</small>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Featured Creators -->
-      <div class="container m-b-5">
-        <section class="featured-creators">
-          <h2>Featured Creators</h2>
-          <div class="creator-cards">
-            <div class="creator-card">
-              <div class="creator-thumb"></div>
-              <div class="creator-info">
-                <h5>Creator Name</h5>
-                <small>Featured Project</small>
+      <div class="project-container m-b-5">
+        <section class="project-card-box">
+          <div class="project-grid" id="projectGrid">
+            <div class="project-card" data-category="craft" data-subcategory="Embroidery">
+              <div class="project-thumb"></div>
+              <div class="project-info">
+                <h4>Field enter Mrs</h4>
+                <small>by xduarte in Embroidery</small>
               </div>
             </div>
           </div>
         </section>
       </div>
     </main>
-
-    <footer class="footer p-4">
-      <div class="footer-columns">
-        <div class="footer-col">
-          <p>
-            Let's stay in touch! Sign up to our newsletter and get the best
-            deals!
-          </p>
-          <input
-            type="text"
-            placeholder="Insert your email address here"
-            class="form-control m-t-2"
-          />
-          <button class="btn m-t-2">Subscribe now</button>
+    <footer class="site-footer p-y-4">
+      <div class="footer-container">
+        <div class="footer-top">
+          <h4 class="footer-heading">Let’s stay in touch!</h4>
+          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
         </div>
-        <div class="footer-col">
-          <h4>Help</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">How to Guides</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="footer-links-grid">
+          <div>
+            <h5 class="footer-link-title">Help</h5>
+            <ul>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer-link-title">Legal</h5>
+            <ul>
+              <li><a href="/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Other</h4>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Subscriptions</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2025 HobbyHub. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -162,4 +99,3 @@
     <script type="module" src="js/components/floating_search_button.js"></script>
   </body>
 </html>
-

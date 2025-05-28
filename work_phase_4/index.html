@@ -10,128 +10,163 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/page_css/explore.css" />
-
+    <link rel="stylesheet" href="css/page_css/index.css" />
+    <link rel="stylesheet" href="css/component_skeletons/card.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav id="nav-desktop" aria-label="Main Navigation">
-      <div class="nav-logo">HobbyHub</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="explore.html" class="nav-item active">Explore</a></li>
-        <li><a href="#">Create & Share</a></li>
-        <li>
-          <input
-            type="search"
-            placeholder="Search projects or creators..."
-            aria-label="Search"
-          />
-        </li>
-      </ul>
+    <nav id="nav-desktop">
+      <div class="nav-upper">
+        <div class="nav-logo">HobbyHub</div>
+      </div>
+      <div id="nav-container">
+        <div class="nav-search">
+          <input type="text" placeholder="Search projects or creators!" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-item active">Home</a></li>
+          <li><a href="explore_projects.html">Explore</a></li>
+          <li><a href="#">Create & Share</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Learn & Inspire</a></li>
+          <li><a href="#">My Hub</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-      <div class="container m-t-5">
-        <!-- Hero Section -->
-        <section class="hero m-b-5">
-          <div class="hero-content">
-            <h1 class="m-b-2">Explore Projects</h1>
-            <p class="hero-text">
-              Discover and engage with projects shared by creators across
-              categories: crafts, tech, books, and more.
-            </p>
-          </div>
-        </section>
-
-        <!-- Filter Section -->
-        <section class="filters m-b-5">
-          <h2>Filter</h2>
-          <div class="filter-buttons m-y-3">
-            <button class="btn btn-outline">All</button>
-            <button class="btn btn-outline">Workshop</button>
-            <button class="btn btn-outline">Outdoors</button>
-            <button class="btn btn-outline">Craft</button>
-          </div>
-          <div class="filter-dropdowns m-y-3">
-            <select>
-              <option>Category</option>
-            </select>
-            <select>
-              <option>Tags</option>
-            </select>
-            <select>
-              <option>Sort By</option>
-            </select>
-            <select>
-              <option>Project Format</option>
-            </select>
-          </div>
-        </section>
-
-        <!-- Project Grid -->
-        <section class="project-grid m-b-5">
-          <div class="card">
-            <div class="card-thumbnail"></div>
-            <h4 class="card-title">Project</h4>
-            <p class="card-meta">By creator in Category.</p>
-          </div>
-          <!-- More cards here -->
-        </section>
-
-        <!-- Featured Creators -->
-        <section class="featured-creators">
-          <h2 class="m-b-4">Featured Creators</h2>
-          <div class="creator-grid">
-            <div class="creator-card">
-              <div class="creator-photo"></div>
-              <h5>Creator Name</h5>
-              <small>Featured Project</small>
+      <section class="hero-carousel">
+        <div class="carousel-slide active">
+          <h1>Explore Projects</h1>
+          <p>Discover a variety of projects across multiple categories.</p>
+          <a href="/explore" class="cta-button">Start Exploring</a>
+        </div>
+        <div class="carousel-slide">
+          <h1>Create & Share</h1>
+          <p>Contribute your own projects and share with the community.</p>
+          <a href="/create" class="cta-button">Share Your Project</a>
+        </div>
+        <div class="carousel-slide">
+          <h1>Learn & Inspire</h1>
+          <p>Access tutorials and resources to enhance your skills.</p>
+          <a href="/learn" class="cta-button">Start Learning</a>
+        </div>
+        <div class="carousel-controls">
+          <button class="prev">‹</button>
+          <button class="next">›</button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+      <!-- Info and Values Section -->
+      <section class="values-section">
+        <div class="values-grid">
+          <p class="annotation">Our Mission: [Insert mission statement text here]</p>
+          <p class="annotation">Built By Makers: [Describe how the community creates and shares]</p>
+          <p class="annotation">Join the Community: [Explain how users can participate and belong]</p>
+        </div>
+      </section>
+      <!-- Featured Creators Section -->
+      <section class="home-section m-y-5">
+        <div class="section-card card p-4">
+          <h2 class="section-title m-b-4">Featured Creators</h2>
+          <div class="creator-cards">
+            <div class="creator-card card">
+              <img src="images/creator1.jpg" alt="Creator 1">
+              <h3 class="card-title">Alex Rivera</h3>
+              <p class="card-desc">3D-printed drone mod featured in TechDaily.</p>
             </div>
-            <!-- More creator cards -->
+            <div class="creator-card card">
+              <img src="images/creator2.jpg" alt="Creator 2">
+              <h3 class="card-title">Jamie Tran</h3>
+              <p class="card-desc">Upcycled fashion project empowering local communities.</p>
+            </div>
+            <div class="creator-card card">
+              <img src="images/creator3.jpg" alt="Creator 3">
+              <h3 class="card-title">Mina Al-Fayed</h3>
+              <p class="card-desc">Interactive LED sculptures for public spaces.</p>
+            </div>
           </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+      <!-- Top Categories Section -->
+      <section class="home-section m-y-5">
+        <div class="section-card card p-4">
+          <h2 class="section-title m-b-4">Top Categories</h2>
+          <div class="category-cards">
+            <div class="category-card card">
+              <img src="images/circuits.jpg" alt="Circuits">
+              <h3 class="card-title">Circuits</h3>
+            </div>
+            <div class="category-card card">
+              <img src="images/workshop.jpg" alt="Workshop">
+              <h3 class="card-title">Workshop</h3>
+            </div>
+            <div class="category-card card">
+              <img src="images/crafts.jpg" alt="Craft">
+              <h3 class="card-title">Craft</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer m-t-5">
-      <div class="footer-grid">
-        <div>
-          <p>
-            Let’s stay in touch! Sign up to our newsletter and get the best
-            deals!
-          </p>
-          <div class="footer-logo">Logo</div>
-          <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+      <!-- Latest Projects Section -->
+      <section class="home-section m-y-5">
+        <div class="section-card card p-4">
+          <h2 class="section-title m-b-4">Latest Projects</h2>
+          <div class="project-grid">
+            <div class="project-card card">
+              <img src="images/project1.jpg" alt="Project 1">
+              <h3 class="card-title">Smart Hydroponics Kit</h3>
+              <p class="card-desc">Fully automated IoT-based plant grower.</p>
+            </div>
+            <div class="project-card card">
+              <img src="images/project2.jpg" alt="Project 2">
+              <h3 class="card-title">Recycled Paper Sculptures</h3>
+              <p class="card-desc">Creative reuse of materials in classroom art.</p>
+            </div>
+            <div class="project-card card">
+              <img src="images/project3.jpg" alt="Project 3">
+              <h3 class="card-title">Arduino Mood Lamp</h3>
+              <p class="card-desc">Custom RGB lighting based on room ambience.</p>
+            </div>
           </div>
         </div>
-        <div>
-          <input type="email" placeholder="Insert your email address here" />
-          <button class="btn btn-primary">Subscribe Now</button>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer p-y-4">
+      <div class="footer-container">
+        <div class="footer-top">
+          <h4 class="footer-heading">Let’s stay in touch!</h4>
+          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
         </div>
-        <div>
-          <h5>Help</h5>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">How to Guides</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="footer-links-grid">
+          <div>
+            <h5 class="footer-link-title">Help</h5>
+            <ul>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer-link-title">Legal</h5>
+            <ul>
+              <li><a href="/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h5>Other</h5>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Subscriptions</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2025 HobbyHub. All rights reserved.</p>
         </div>
       </div>
     </footer>
+    <script src="js/index.js" defer></script>
   </body>
 </html>
