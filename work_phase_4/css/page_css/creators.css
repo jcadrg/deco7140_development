@@ -1,0 +1,146 @@
+/* creators.css */
+
+/* --- Layout & Containers --- */
+.creator-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* --- Filter Controls --- */
+.filter-controls {
+  background-color: var(--color-bg);
+  padding: var(--space-4);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.tag-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.tag-filters button {
+  background: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-dark);
+  transition: background 0.2s;
+}
+
+.tag-filters button:hover {
+  background-color: var(--color-info);
+  color: white;
+}
+
+.filter-tab.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+/* --- Creator Grid --- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: var(--space-4);
+  width: 100%;
+}
+
+/* --- Creator Card --- */
+.creator-card {
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.creator-card:hover {
+  transform: translateY(-4px);
+}
+
+.creator-thumb {
+  width: 100%;
+  height: 140px;
+  background-color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.creator-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creator-info {
+  width: 100%;
+  padding: var(--space-3);
+  background-color: var(--color-surface);
+}
+
+.creator-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.creator-info small {
+  font-size: 0.85rem;
+  color: var(--color-subtle);
+}
+
+/* --- Utilities --- */
+.btn {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.form-control {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-muted);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--color-surface);
+  color: var(--color-dark);
+}
+
+/* --- Creator Card Link --- */
+.creator-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.creator-card-link:hover .creator-card {
+  transform: translateY(-4px);
+}

@@ -47,11 +47,54 @@ nav ul {
   color: var(--color-primary);
 }
 
-/* Responsive image */
-.responsive-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.breadcrumb-nav {
+  background-color: var(--color-surface);
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-2);
+  max-width: 10%;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--color-dark);
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin: 0 0.25rem;
+  color: var(--color-subtle);
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .current {
+  font-weight: 700;
+  color: var(--color-text);
 }
 
 /* Footer component */

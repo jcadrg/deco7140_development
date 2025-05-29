@@ -203,15 +203,6 @@
   transform: translateY(-4px);
 }
 
-.project-thumb {
-  height: 150px;
-  background-color: var(--color-muted);
-}
-
-.project-info {
-  padding: var(--space-3);
-}
-
 /* CREATORS SECTION */
 .featured-creators {
   margin-top: var(--space-5);
@@ -392,3 +383,5 @@
 .dot.active {
   background-color: var(--color-primary);
 }
+
+

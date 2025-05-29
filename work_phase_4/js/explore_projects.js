@@ -61,9 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
           <small>by ${project.creator} in ${project.subcategory}</small>
         </div>
       `;
+
+      // 🔗 Make it clickable
+      card.addEventListener("click", () => {
+        window.location.href = "project.html";
+      });
+
       grid.appendChild(card);
     });
   }
+
 
   // --- FILTER TAB + DROPDOWN LOGIC ---
   const filterTabs = document.querySelectorAll('.filter-tab');
@@ -92,16 +99,34 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       document.querySelector('.filter-tab.active')?.classList.remove('active');
       tab.classList.add('active');
-      currentCategory = tab.getAttribute('data-category');
-      currentSubcategory = null;
-      populateDropdown(currentCategory);
-      applyFilters();
+      const category = tab.getAttribute('data-category');
+      populateDropdown(category);
+
+      // Filter cards
+      const selectedCategory = tab.getAttribute('data-category');
+      const selectedSub = dropdown.value;
+
+      document.querySelectorAll('.project-card').forEach(card => {
+        const matchesCat = selectedCategory === "all" || card.dataset.category === selectedCategory;
+        const matchesSub = selectedSub === "Select a subcategory" || card.dataset.subcategory === selectedSub;
+        card.style.display = matchesCat && matchesSub ? "" : "none";
+      });
+
+      handleNoResults();
     });
   });
 
   dropdown?.addEventListener('change', () => {
-    currentSubcategory = dropdown.value === 'Select a subcategory' ? null : dropdown.value;
-    applyFilters();
+    const selectedCategory = document.querySelector('.filter-tab.active')?.getAttribute('data-category') || 'all';
+    const selectedSub = dropdown.value;
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      const matchesCat = selectedCategory === "all" || card.dataset.category === selectedCategory;
+      const matchesSub = selectedSub === "Select a subcategory" || card.dataset.subcategory === selectedSub;
+      card.style.display = matchesCat && matchesSub ? "" : "none";
+    });
+
+    handleNoResults();
   });
 
   function populateDropdown(category) {
@@ -114,6 +139,30 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.appendChild(option);
     });
   }
+
+  function handleNoResults() {
+    const grid = document.getElementById("projectGrid");
+    let noResults = document.getElementById("noResults");
+
+    const visibleCards = Array.from(grid.children).filter(card => card.style.display !== "none");
+
+    if (visibleCards.length === 0) {
+      if (!noResults) {
+        noResults = document.createElement("p");
+        noResults.id = "noResults";
+        noResults.textContent = "No results found for the selected filters.";
+        noResults.style.textAlign = "center";
+        noResults.style.padding = "2rem";
+        noResults.style.color = "var(--color-subtle)";
+        grid.parentElement.appendChild(noResults);
+      }
+    } else {
+      if (noResults) {
+        noResults.remove();
+      }
+    }
+  }
+
 
   function applyFilters() {
     let filtered = allProjects.filter(p => {

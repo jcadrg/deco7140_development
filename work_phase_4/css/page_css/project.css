@@ -1,0 +1,235 @@
+/* --------------------------------------- */
+/*      PROJECT PAGE-SPECIFIC STYLES       */
+/* --------------------------------------- */
+
+/* Hero Section */
+.project-hero {
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.project-meta {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: var(--space-4);
+}
+
+.project-meta a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-meta a:hover {
+  color: var(--color-accent);
+}
+
+.project-hero-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-3);
+}
+
+.project-hero-images img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.project-description-container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .project-description-container {
+    width: 70vw;
+  }
+}
+
+/* Author Dialog */
+.author-info-box-expanded {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-muted);
+  padding: var(--space-4);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  width: 50%;
+  margin: var(--space-4) auto; /* center horizontally */
+  gap: var(--space-4);
+}
+
+.author-info-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.author-avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-details p {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: var(--space-2);
+}
+
+.author-details .btn {
+  display: inline-block;
+  margin-top: var(--space-2);
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.author-extras {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.more-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  white-space: nowrap;
+}
+
+.more-images {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.more-images img {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .author-info-box-expanded {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .author-extras {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Description */
+.project-description {
+  margin-top: var(--space-5);
+}
+
+.project-description h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--color-dark);
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* Steps */
+.project-steps {
+  margin-top: var(--space-5);
+}
+
+.project-steps h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: var(--space-4);
+}
+
+.step {
+  margin-bottom: var(--space-5);
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: var(--space-2);
+}
+
+.step img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: var(--space-3);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.step p {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Annotation Note Style */
+.annotation {
+  background-color: var(--color-muted);
+  padding: var(--space-3);
+  border-left: 5px solid var(--color-accent);
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  margin-top: var(--space-2);
+}
+
+.annotation a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.annotation a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  .project-hero-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author-info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

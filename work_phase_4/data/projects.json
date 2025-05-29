@@ -82,5 +82,11 @@
     "creator": "thriftmaker",
     "category": "craft",
     "subcategory": "Upcycling"
+  },  
+  {
+    "title": "AI Voice assistant",
+    "creator": "Orange Digital Center",
+    "category": "circuits",
+    "subcategory": "Raspberry Pi"
   }
 ]

@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- CSS Linking -->
+    <title>Explore Creators | HobbyHub</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/page_css/explore.css" />
+    <link rel="stylesheet" href="css/page_css/creators.css" />
     <link rel="stylesheet" href="css/component_skeletons/floating_search_button.css"/>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <title>Explore Projects</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav id="nav-desktop">
       <div class="nav-upper">
         <div class="nav-logo">HobbyHub</div>
@@ -25,9 +24,9 @@
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="explore_projects.html" class="nav-item active">Explore</a></li>
+          <li><a href="explore_projects.html">Explore</a></li>
           <li><a href="#">Create & Share</a></li>
-          <li><a href="creators.html">Creators</a></li>
+          <li><a href="#" class="nav-item active">Creators</a></li>
           <li><a href="#">Learn & Inspire</a></li>
           <li><a href="#">My Hub</a></li>
           <li><a href="genai_aknowledgment.html">AI Aknowledgment</a></li>
@@ -35,40 +34,31 @@
       </div>
     </nav>
 
+    <!-- Filter Controls -->
     <main>
-      <!-- Filter Controls -->
       <div class="project-container m-b-5">
         <section class="filter-controls">
-          <h2>You can select a category to narrow down your search!</h2>
+          <h2>Meet our creators!</h2>
           <div class="tag-filters m-t-2">
-            <button class="filter-tab" data-category="all">All</button>
-            <button class="filter-tab active" data-category="circuits">Circuits</button>
-            <button class="filter-tab" data-category="workshop">Workshop</button>
-            <button class="filter-tab" data-category="craft">Craft</button>
-          </div>
-          <div class="dropdown-filters m-t-3">
-            <select id="subcategory-dropdown">
-              <option>Select a subcategory</option>
-            </select>
+            <button class="filter-tab active" data-category="all">All</button>
+            <button class="filter-tab" data-category="project">Project Creators</button>
+            <button class="filter-tab" data-category="tutor">Tutors</button>
           </div>
         </section>
       </div>
-      <!-- Project Grid -->
+
+      <!-- Creator Grid (same as project layout) -->
       <div class="project-container m-b-5">
         <section class="project-card-box">
-          <h3>19 Projects</h3>
-          <div class="project-grid" id="projectGrid">
-            <div class="project-card" data-category="craft" data-subcategory="Embroidery">
-              <div class="project-thumb"></div>
-              <div class="project-info">
-                <h4>Field enter Mrs</h4>
-                <small>by xduarte in Embroidery</small>
-              </div>
-            </div>
+          <h3>19 Creators</h3>
+          <div class="project-grid" id="creatorGrid">
+            <!-- JavaScript will inject creator cards here -->
           </div>
         </section>
       </div>
     </main>
+
+    <!-- Footer -->
     <footer class="site-footer p-y-4">
       <div class="footer-container">
         <div class="footer-top">
@@ -96,7 +86,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/explore_projects.js"></script>
+
+    <script src="js/creators.js"></script>
     <script type="module" src="js/components/floating_search_button.js"></script>
   </body>
 </html>
