@@ -7,6 +7,13 @@
   padding: 0 var(--space-4);
 }
 
+.project-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--space-4);
+}
+
 /* --- Filter Controls --- */
 .filter-controls {
   background-color: var(--color-bg);

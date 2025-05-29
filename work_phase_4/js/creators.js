@@ -14,17 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Maria Gutierrez",
       role: "Tutor",
-      avatar: "assets/img/avatar2.png",
+      avatar: "assets/img/avatar-female-2.jpeg",
     },
     {
       name: "John Smith",
       role: "Project Creator",
-      avatar: "assets/img/avatar3.png",
+      avatar: "assets/img/avatar-male-1.png",
     },
     {
       name: "Elaine Wu",
       role: "Tutor",
-      avatar: "assets/img/avatar4.png",
+      avatar: "assets/img/avatar-female-1.jpg",
     },
   ];
 
