@@ -19,6 +19,9 @@
     <nav id="nav-desktop">
       <div class="nav-upper">
         <div class="nav-logo">HobbyHub</div>
+        <button id="mobile-menu-toggle" aria-label="Toggle navigation">
+          ☰
+        </button>
       </div>
       <div id="nav-container">
         <div class="nav-search">
@@ -29,7 +32,9 @@
           <li><a href="explore_projects.html">Explore</a></li>
           <li><a href="creators.html">Creators</a></li>
           <li><a href="my_hub.html">My Hub</a></li>
-          <li><a href="implementation_rationale.html">Implementation Rationale</a></li>
+          <li>
+            <a href="implementation_rationale.html">Implementation Rationale</a>
+          </li>
           <li><a href="genai_aknowledgment.html">AI Acknowledgement</a></li>
         </ul>
       </div>
@@ -40,7 +45,9 @@
         <div class="carousel-slide active">
           <h1>Explore Projects</h1>
           <p>Discover a variety of projects across multiple categories.</p>
-          <a href="/explore_projects.html" class="cta-button">Start Exploring</a>
+          <a href="/explore_projects.html" class="cta-button"
+            >Start Exploring</a
+          >
         </div>
         <div class="carousel-slide">
           <h1>Create & Share</h1>
@@ -66,8 +73,13 @@
       <section class="values-section">
         <div class="values-grid">
           <p class="annotation">A creative space where your passions matter.</p>
-          <p class="annotation">Built By Makers: Share your latest project, show everyone how you did it.</p>
-          <p class="annotation">Connect with a community that celebrates creativity in all forms.</p>
+          <p class="annotation">
+            Built By Makers: Share your latest project, show everyone how you
+            did it.
+          </p>
+          <p class="annotation">
+            Connect with a community that celebrates creativity in all forms.
+          </p>
         </div>
       </section>
       <!-- Featured Creators Section -->
@@ -76,19 +88,25 @@
           <h2 class="section-title m-b-4">Featured Creators</h2>
           <div class="creator-cards">
             <div class="creator-card card">
-              <img src="assets/img/avatar-female-2.jpeg" alt="Creator 1">
+              <img src="assets/img/avatar-female-2.jpeg" alt="Creator 1" />
               <h3 class="card-title">Maria Gutierrez</h3>
-              <p class="card-desc">3D-printed drone mod featured in TechDaily.</p>
+              <p class="card-desc">
+                3D-printed drone mod featured in TechDaily.
+              </p>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/avatar-male-1.png" alt="Creator 2">
+              <img src="assets/img/avatar-male-1.png" alt="Creator 2" />
               <h3 class="card-title">John Smith</h3>
-              <p class="card-desc">Upcycled fashion project empowering local communities.</p>
+              <p class="card-desc">
+                Upcycled fashion project empowering local communities.
+              </p>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/avatar-female-1.jpg" alt="Creator 3">
+              <img src="assets/img/avatar-female-1.jpg" alt="Creator 3" />
               <h3 class="card-title">Elaine Wood</h3>
-              <p class="card-desc">Interactive LED sculptures for public spaces.</p>
+              <p class="card-desc">
+                Interactive LED sculptures for public spaces.
+              </p>
             </div>
           </div>
         </div>
@@ -99,15 +117,15 @@
           <h2 class="section-title m-b-4">Top Categories</h2>
           <div class="category-cards">
             <div class="creator-card card">
-              <img src="assets/img/circuits-placeholder.jpg" alt="Circuits">
+              <img src="assets/img/circuits-placeholder.jpg" alt="Circuits" />
               <h3 class="card-title">Circuits</h3>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/workshop-placeholder.png" alt="Workshop">
+              <img src="assets/img/workshop-placeholder.png" alt="Workshop" />
               <h3 class="card-title">Workshop</h3>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/craft-placeholder.jpg" alt="Craft">
+              <img src="assets/img/craft-placeholder.jpg" alt="Craft" />
               <h3 class="card-title">Craft</h3>
             </div>
           </div>
@@ -120,19 +138,30 @@
           <h2 class="section-title m-b-4">Latest Projects</h2>
           <div class="project-grid">
             <div class="creator-card card">
-              <img src="assets/img/index-project-placeholder-1.jpg" alt="Project 1">
+              <img
+                src="assets/img/index-project-placeholder-1.jpg"
+                alt="Project 1"
+              />
               <h3 class="card-title">Smart Hydroponics Kit</h3>
               <p class="card-desc">Fully automated IoT-based plant grower.</p>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/index-project-placeholder-2.png" alt="Project 2">
+              <img
+                src="assets/img/index-project-placeholder-2.png"
+                alt="Project 2"
+              />
               <h3 class="card-title">Jam!</h3>
               <p class="card-desc">3D Art dungeon jam factory!</p>
             </div>
             <div class="creator-card card">
-              <img src="assets/img/index-project-placeholder-3.jpg" alt="Project 3">
+              <img
+                src="assets/img/index-project-placeholder-3.jpg"
+                alt="Project 3"
+              />
               <h3 class="card-title">Arduino Mood Lamp</h3>
-              <p class="card-desc">Custom RGB lighting based on room ambience.</p>
+              <p class="card-desc">
+                Custom RGB lighting based on room ambience.
+              </p>
             </div>
           </div>
         </div>
@@ -143,7 +172,9 @@
       <div class="footer-container">
         <div class="footer-top">
           <h4 class="footer-heading">Let’s stay in touch!</h4>
-          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <p class="footer-subtext">
+            Sign up to our newsletter and stay up to date!
+          </p>
           <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
         </div>
         <div class="footer-links-grid">
@@ -167,5 +198,6 @@
       </div>
     </footer>
     <script src="js/index.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
   </body>
 </html>

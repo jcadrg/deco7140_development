@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/page_css/explore.css" />
-    <link rel="stylesheet" href="css/component_skeletons/floating_search_button.css"/>
+    <link
+      rel="stylesheet"
+      href="css/component_skeletons/floating_search_button.css"
+    />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Explore Projects</title>
   </head>
@@ -18,17 +21,22 @@
     <nav id="nav-desktop">
       <div class="nav-upper">
         <div class="nav-logo">HobbyHub</div>
+        <button id="mobile-menu-toggle" aria-label="Toggle navigation">
+          ☰
+        </button>
       </div>
       <div id="nav-container">
         <div class="nav-search">
-          <input type="text" id="search-input" placeholder="Search projects or creators!" />
+          <input type="text" placeholder="Search projects or creators!" />
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="explore_projects.html" class="nav-item active">Explore</a></li>
           <li><a href="creators.html">Creators</a></li>
           <li><a href="my_hub.html">My Hub</a></li>
-          <li><a href="implementation_rationale.html">Implementation Rationale</a></li>
+          <li>
+            <a href="implementation_rationale.html">Implementation Rationale</a>
+          </li>
           <li><a href="genai_aknowledgment.html">AI Acknowledgement</a></li>
         </ul>
       </div>
@@ -41,12 +49,18 @@
           <h2>You can select a category to narrow down your search!</h2>
           <div class="tag-filters m-t-2">
             <button class="filter-tab" data-category="all">All</button>
-            <button class="filter-tab active" data-category="circuits">Circuits</button>
-            <button class="filter-tab" data-category="workshop">Workshop</button>
+            <button class="filter-tab active" data-category="circuits">
+              Circuits
+            </button>
+            <button class="filter-tab" data-category="workshop">
+              Workshop
+            </button>
             <button class="filter-tab" data-category="craft">Craft</button>
           </div>
           <div class="dropdown-filters m-t-3">
-            <label for="subcategory-dropdown" class="form-label">Choose a Subcategory</label>
+            <label for="subcategory-dropdown" class="form-label"
+              >Choose a Subcategory</label
+            >
             <select id="subcategory-dropdown">
               <option>Select a subcategory</option>
             </select>
@@ -58,7 +72,11 @@
         <section class="project-card-box">
           <h3>19 Projects</h3>
           <div class="project-grid" id="projectGrid">
-            <div class="project-card" data-category="craft" data-subcategory="Embroidery">
+            <div
+              class="project-card"
+              data-category="craft"
+              data-subcategory="Embroidery"
+            >
               <div class="project-thumb"></div>
               <div class="project-info">
                 <h4>Field enter Mrs</h4>
@@ -73,7 +91,9 @@
       <div class="footer-container">
         <div class="footer-top">
           <h4 class="footer-heading">Let’s stay in touch!</h4>
-          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <p class="footer-subtext">
+            Sign up to our newsletter and stay up to date!
+          </p>
           <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
         </div>
         <div class="footer-links-grid">
@@ -96,7 +116,11 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-nav.js" defer></script>
     <script src="./js/explore_projects.js"></script>
-    <script type="module" src="js/components/floating_search_button.js"></script>
+    <script
+      type="module"
+      src="js/components/floating_search_button.js"
+    ></script>
   </body>
 </html>
