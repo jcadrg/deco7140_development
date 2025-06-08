@@ -1,0 +1,174 @@
+/* Styles specific to my_hub.html */
+/* Modal base styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  z-index: 2;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Optional: align modal with form styling already used */
+.modal-content form {
+  max-width: 100%;
+}
+
+.form-feedback {
+  text-align: center;
+}
+
+/* Styled select dropdown */
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-muted, #EDEDED);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: var(--text-color, #2E2E2E);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%232E2E2E'%20d='M2%205L0%200h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.65rem;
+}
+
+/* Button Row Styling */
+.modal-actions,
+.form-group .btn,
+.form-group .btn-secondary {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+button.btn-primary {
+  background-color: var(--color-accent, #F18F01);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #d97706;
+}
+
+button.btn-secondary {
+  background-color: #E2E8F0;
+  color: #2D3748;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-secondary:hover {
+  background-color: #CBD5E0;
+}
+
+.profile-section-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2.5rem;
+}
+
+.creator-info-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%; 
+}
+
+.edit-button-box {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.edit-btn-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+#edit-profile-btn {
+  padding: 0.6rem 1.4rem;
+  background-color: var(--color-accent, #F18F01);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn-positioned {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--color-accent, #F18F01);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+#edit-profile-btn:hover {
+  background-color: #d97706;
+}
+
+.edit-btn-positioned:hover {
+  background-color: #d97706;
+}
+
