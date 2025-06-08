@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/component_skeletons/card.css" />
+    <link rel="stylesheet" href="css/page_css/implementation_rationale.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Implementation Rationale</title>
+  </head>
+  <body>
+    <nav id="nav-desktop">
+      <div class="nav-upper">
+        <div class="nav-logo">HobbyHub</div>
+      </div>
+      <div id="nav-container">
+        <div class="nav-search">
+          <input type="text" placeholder="Search projects or creators!" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore_projects.html">Explore</a></li>
+          <li><a href="#">Create & Share</a></li>
+          <li><a href="creators.html">Creators</a></li>
+          <li><a href="#">Learn & Inspire</a></li>
+          <li><a href="#">My Hub</a></li>
+          <li><a href="implementation_rationale.html" class="nav-item active">Implementation Rationale</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>Implementation Rationale</h1>
+        <article class="ethics m-t-5">
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Alignment with Client and User Needs</h3>
+            <p>The platform evolved from a niche hobby showcase to a broader social and educational space, reflecting feedback from new personas (e.g. retired crafter, urban drone racer, bookstagrammer mom). The revised homepage copy and structure aligned with Connect Communities Initiative (CCI) by prioritizing belonging, creativity, and accessibility. Users are empowered to explore, share, and connect in low-pressure ways.</p>
+          </section>
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Accessibility and Ethical Considerations</h3>
+            <p>Accessibility principles guided every aspect — including inclusive language, visible input feedback, consistent color contrast (e.g. WCAG-compliant purple and pink), and semantic HTML. Ethical considerations included avoiding stereotypes, safeguarding user privacy, and welcoming diverse backgrounds. These were supported by WCAG, the Australian Government Style Manual, and CCI values.</p>
+          </section>
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Variations from A3 Design Proposal</h3>
+            <p>Major shifts included changing the audience scope, refining the visual identity (e.g. button styles, layout), and streamlining categories (e.g. merging tutorial vs project sharing). Design evolved to address technical feasibility, scope clarity, and user testing insights. All updates remained aligned with CCI’s mission.</p>
+          </section>
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Challenges and Strategies</h3>
+            <p>Key challenges included data parsing, onboarding structure, responsive layout issues, and ensuring tone inclusivity. These were resolved with modular JavaScript (e.g. filters.js), feedback-driven page adjustments, and visual refinements through CSS variables. Peer feedback guided iterative improvements.</p>
+          </section>
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Accessibility Audit</h3>
+            <p>Audit completed via IBM Equal Access Checker. Results confirmed contrast success, label clarity, and keyboard navigation. Minor ARIA labeling suggestions were resolved pre-submission. <strong>Screenshot to be added here.</strong></p>
+          </section>
+
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">GitHub Repository</h3>
+            <p><a href="#" class="card-link">[Insert GitHub repo URL here]</a></p>
+          </section>
+
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer p-y-4">
+      <div class="footer-container">
+        <div class="footer-top">
+          <h4 class="footer-heading">Let’s stay in touch!</h4>
+          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
+        </div>
+        <div class="footer-links-grid">
+          <div>
+            <h5 class="footer-link-title">Help</h5>
+            <ul>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer-link-title">Legal</h5>
+            <ul>
+              <li><a href="/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2025 HobbyHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/components/floating_search_button.js"></script>
+  </body>
+</html>
