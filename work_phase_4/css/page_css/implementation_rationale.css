@@ -1,0 +1,71 @@
+/* implementation_rationale.css */
+
+.ethics {
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.ethics-block {
+  background-color: var(--color-surface);
+  padding: 1.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ethics-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.ethics-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.ethics-block p {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.card-link {
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.audit-screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.audit-thumb {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-muted);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.audit-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.audit-thumb figcaption {
+  font-size: 0.85rem;
+  color: var(--color-dark);
+  margin-top: 0.5rem;
+}

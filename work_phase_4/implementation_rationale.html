@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/component_skeletons/card.css" />
+    <link
+      rel="stylesheet"
+      href="css/component_skeletons/floating_search_button.css"
+    />
+    <link rel="stylesheet" href="css/page_css/genai_aknowledgement.css" />
     <link rel="stylesheet" href="css/page_css/implementation_rationale.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Implementation Rationale</title>
@@ -26,11 +30,14 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="explore_projects.html">Explore</a></li>
-          <li><a href="#">Create & Share</a></li>
           <li><a href="creators.html">Creators</a></li>
-          <li><a href="#">Learn & Inspire</a></li>
-          <li><a href="#">My Hub</a></li>
-          <li><a href="implementation_rationale.html" class="nav-item active">Implementation Rationale</a></li>
+          <li><a href="my_hub.html">My Hub</a></li>
+          <li>
+            <a href="implementation_rationale.html" class="nav-item active"
+              >Implementation Rationale</a
+            >
+          </li>
+          <li><a href="genai_aknowledgment.html">AI Acknowledgement</a></li>
         </ul>
       </div>
     </nav>
@@ -39,37 +46,246 @@
       <div class="container">
         <h1>Implementation Rationale</h1>
         <article class="ethics m-t-5">
-
           <section class="ethics-block m-b-4">
             <h3 class="ethics-heading">Alignment with Client and User Needs</h3>
-            <p>The platform evolved from a niche hobby showcase to a broader social and educational space, reflecting feedback from new personas (e.g. retired crafter, urban drone racer, bookstagrammer mom). The revised homepage copy and structure aligned with Connect Communities Initiative (CCI) by prioritizing belonging, creativity, and accessibility. Users are empowered to explore, share, and connect in low-pressure ways.</p>
+            <p>
+              The implementation phase expanded significantly on the original
+              niche concept of a hobby-sharing platform. Initial ideas were
+              oriented toward project galleries and passive browsing. However,
+              based on feedback gathered through persona development (e.g. the
+              retired crafter, the bookstagrammer mom, and the urban drone
+              racer), the design evolved to support more dynamic, inclusive, and
+              community-driven use cases. These personas emphasized the need for
+              encouragement, emotional safety, and easy interaction—especially
+              for users with varied digital confidence levels or limited time
+              availability.
+            </p>
+            <p>
+              As implementation progressed, however, the target audience
+              underwent a major shift. Reflecting insights from peer testing and
+              iterative design reflection (Reflection Notebook, pp. 3–6), the
+              platform transitioned toward a more focused demographic:
+              tech-savvy DIY creators interested in structured learning,
+              showcasing, and collaboration. This pivot was driven by
+              feasibility concerns and the recognition that a more technically
+              engaged audience would better suit the scope and capabilities of
+              the project. Consequently, original personas were retired, and
+              features were redesigned to support maker-oriented use cases—such
+              as circuits tutorials, 3D printing workflows, and project-based
+              learning.
+            </p>
+            <p>
+              These shifts directly align with the Connect Communities
+              Initiative (CCI), which prioritizes creativity, belonging, and
+              equitable access across digital experiences. For instance, the
+              homepage was rewritten using plain, inclusive language that
+              promotes a sense of belonging rather than achievement pressure
+              (e.g. “where your passions belong” instead of “where your passions
+              matter”). This follows WCAG 3.1.1 for readability and aligns with
+              inclusive design recommendations from the Australian Government
+              Style Manual and CCI guidelines.
+            </p>
+            <p>
+              Structurally, the site now supports multiple pathways for user
+              interaction—such as project creation, group discovery, and profile
+              personalization—based on research indicating users prefer
+              platforms that support both expression and exploration (Reflection
+              Notebook, pp. 3–6). These features also reflect CCI’s emphasis on
+              low-pressure participation, ensuring that even new or less
+              confident users feel empowered to contribute.
+            </p>
           </section>
 
           <section class="ethics-block m-b-4">
-            <h3 class="ethics-heading">Accessibility and Ethical Considerations</h3>
-            <p>Accessibility principles guided every aspect — including inclusive language, visible input feedback, consistent color contrast (e.g. WCAG-compliant purple and pink), and semantic HTML. Ethical considerations included avoiding stereotypes, safeguarding user privacy, and welcoming diverse backgrounds. These were supported by WCAG, the Australian Government Style Manual, and CCI values.</p>
+            <h3 class="ethics-heading">
+              Accessibility and Ethical Considerations
+            </h3>
+            <p>
+              Accessibility principles guided every aspect of the platform’s
+              development. This included the use of semantic HTML5 elements
+              (e.g. <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+              <code>&lt;nav&gt;</code>), visible focus indicators for keyboard
+              navigation, and responsive feedback mechanisms on form inputs. All
+              colors were chosen to meet WCAG 2.1 AA contrast ratios,
+              particularly the recurring purple and pink tones used for calls to
+              action and headers (WCAG 1.4.3). Typography and spacing were
+              defined using rem units and CSS variables to ensure scalable
+              legibility across devices.
+            </p>
+            <p>
+              Ethical considerations were also embedded throughout the design
+              process. These included avoiding language that could stereotype
+              users based on gender, age, or ability; designing forms without
+              intrusive data collection; and ensuring users could browse and
+              contribute without mandatory login or exposure to algorithmic
+              ranking. The inclusive writing style was modeled on the Australian
+              Government Style Manual and prioritized warmth, clarity, and
+              neutrality.
+            </p>
+            <p>
+              These principles reflect the values of the Connect Communities
+              Initiative (CCI), which encourages inclusive digital design as a
+              pathway to creative empowerment. The team regularly cross-checked
+              the interface against WCAG criteria using tools like IBM Equal
+              Access Checker and followed internal checklists during development
+              sprints to verify ethical and accessibility alignment (Reflection
+              Notebook, p. 4–5).
+            </p>
           </section>
 
           <section class="ethics-block m-b-4">
             <h3 class="ethics-heading">Variations from A3 Design Proposal</h3>
-            <p>Major shifts included changing the audience scope, refining the visual identity (e.g. button styles, layout), and streamlining categories (e.g. merging tutorial vs project sharing). Design evolved to address technical feasibility, scope clarity, and user testing insights. All updates remained aligned with CCI’s mission.</p>
+            <p>
+              Several key deviations from the A3 design proposal emerged during
+              implementation, reflecting a shift in project scope, target
+              audience, and interaction model. Initially envisioned as a
+              general-purpose hobby-sharing platform, the site pivoted to focus
+              on a tech-savvy DIY audience after deeper persona analysis and
+              peer feedback (Reflection Notebook, p. 3–6). This shift resulted
+              in discarding the original personas (e.g., retired crafter,
+              bookstagrammer mom) in favor of new ones such as electronics
+              hobbyists, 3D printing enthusiasts, and open-source hardware
+              creators.
+            </p>
+            <p>
+              These changes impacted not only the visual language of the
+              site—introducing bolder UI elements, streamlined navigation, and
+              more technical vocabulary—but also structural decisions such as
+              collapsing redundant categories (e.g. merging “Projects” and
+              “Tutorials” into a unified card-based feed). The homepage was
+              revised to promote exploration, rather than showcasing pre-set
+              categories or curated highlights, based on insights suggesting
+              that tech creators value discovery and peer-driven visibility.
+            </p>
+            <p>
+              Several UI components proposed in A3 (such as animated onboarding
+              sequences and hover-state tooltips) were either removed or
+              simplified due to implementation feasibility and timeline
+              constraints. Similarly, some visual elements were adapted or
+              replaced—such as the change in button size and layout hierarchy—to
+              improve clarity and align with modular CSS practices introduced
+              later in development.
+            </p>
+            <p>
+              Despite these adjustments, the final product remains aligned with
+              the goals and values outlined in A3. Each change was supported by
+              peer review, user observation, or feasibility assessment. The
+              iterative design process was anchored by the values of the Connect
+              Communities Initiative, particularly around reducing participation
+              barriers and promoting sustainable, expressive tech-focused
+              communities.
+            </p>
           </section>
 
           <section class="ethics-block m-b-4">
             <h3 class="ethics-heading">Challenges and Strategies</h3>
-            <p>Key challenges included data parsing, onboarding structure, responsive layout issues, and ensuring tone inclusivity. These were resolved with modular JavaScript (e.g. filters.js), feedback-driven page adjustments, and visual refinements through CSS variables. Peer feedback guided iterative improvements.</p>
+            <p>
+              The implementation phase posed several technical and design
+              challenges that required adaptive strategies and iterative
+              problem-solving. One major issue was handling dynamic data parsing
+              for user content. Originally, project and creator information were
+              hardcoded, but to improve maintainability and simulate real-world
+              functionality, the site was restructured to pull this data from
+              modular JavaScript files (e.g., <code>filters.js</code>,
+              <code>details.js</code>). This not only reduced redundancy but
+              also laid the foundation for scalability in a potential live
+              environment.
+            </p>
+            <p>
+              On the front-end, layout inconsistencies across devices were
+              discovered late in development, particularly in margin spacing and
+              component alignment. These were resolved using CSS variables and
+              flexbox-based layout refinements that ensure responsiveness while
+              preserving aesthetic consistency. Components such as the floating
+              detail card were made mobile-friendly through viewport-aware
+              positioning and scaling.
+            </p>
+            <p>
+              Ethically, tone and inclusion presented an ongoing concern.
+              Several text blocks and prompts were revised to remove jargon,
+              gendered language, or anything that could be interpreted as
+              gatekeeping or exclusionary.
+            </p>
+            <p>
+              Overall, challenges were met with modular, scalable solutions that
+              balanced time constraints with design integrity. Continuous peer
+              feedback, reflection logs, and audit tools (e.g., Equal Access
+              Checker) played a critical role in ensuring progress remained
+              aligned with the platform’s inclusive and user-focused goals.
+            </p>
           </section>
 
           <section class="ethics-block m-b-4">
             <h3 class="ethics-heading">Accessibility Audit</h3>
-            <p>Audit completed via IBM Equal Access Checker. Results confirmed contrast success, label clarity, and keyboard navigation. Minor ARIA labeling suggestions were resolved pre-submission. <strong>Screenshot to be added here.</strong></p>
+            <p>
+              Audit completed via IBM Equal Access Checker. Results confirmed
+              contrast success, label clarity, and keyboard navigation. Minor
+              ARIA labeling suggestions were resolved pre-submission. Screenshot
+              to be added here.
+            </p>
+            <div class="audit-screenshot-gallery m-t-4">
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-1.png" alt="Accessibility scan 1" />
+                <figcaption>Home Page - Initial Violations</figcaption>
+              </figure>
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-2.png" alt="Accessibility scan 2" />
+                <figcaption>Explore Page - Violations Resolved</figcaption>
+              </figure>
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-3.png" alt="Accessibility scan 3" />
+                <figcaption>Creators Contrast Fix</figcaption>
+              </figure>
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-4.png" alt="Accessibility scan 4" />
+                <figcaption>Creator Page - Landmark Fixes</figcaption>
+              </figure>
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-5.png" alt="Accessibility scan 5" />
+                <figcaption>ARIA Label Applied</figcaption>
+              </figure>
+              <figure class="audit-thumb">
+                <img src="assets/img/audit-6.png" alt="Accessibility scan 6" />
+                <figcaption>Final Pass - 0 Violations</figcaption>
+              </figure>
+            </div>
           </section>
 
           <section class="ethics-block m-b-4">
             <h3 class="ethics-heading">GitHub Repository</h3>
-            <p><a href="#" class="card-link">[Insert GitHub repo URL here]</a></p>
+            <p>
+              <a
+                href="https://github.com/jcadrg/deco7140_development"
+                class="card-link"
+                >https://github.com/jcadrg/deco7140_development</a
+              >
+            </p>
           </section>
 
+          <section class="ethics-block m-b-4">
+            <h3 class="ethics-heading">Form Functionality Instructions</h3>
+            <p>
+              The <strong>“My Hub”</strong> page includes working
+              implementations of both <code>GET</code> and
+              <code>POST</code> methods to interact with the community API.
+            </p>
+            <p class="m-t-2">
+              When a user adds or edits their profile information, a
+              <code>POST</code> request is triggered to submit the updated data
+              to the backend endpoint. These actions occur through form
+              submission buttons tied to authenticated users.
+            </p>
+            <p class="m-t-2">
+              Additionally, a <code>GET</code> request is automatically
+              performed every time the page loads or refreshes. This ensures
+              that the most recent data is fetched and displayed immediately
+              when the user visits their profile dashboard.
+            </p>
+            <p class="m-t-2">
+              All data operations were tested to ensure correct field bindings,
+              data persistence, and alignment with the expected API schema.
+            </p>
+          </section>
         </article>
       </div>
     </main>
@@ -78,7 +294,9 @@
       <div class="footer-container">
         <div class="footer-top">
           <h4 class="footer-heading">Let’s stay in touch!</h4>
-          <p class="footer-subtext">Sign up to our newsletter and stay up to date!</p>
+          <p class="footer-subtext">
+            Sign up to our newsletter and stay up to date!
+          </p>
           <a href="/subscribe.html" class="footer-button">Subscribe Now</a>
         </div>
         <div class="footer-links-grid">
@@ -101,6 +319,9 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="js/components/floating_search_button.js"></script>
+    <script
+      type="module"
+      src="js/components/floating_search_button.js"
+    ></script>
   </body>
 </html>
