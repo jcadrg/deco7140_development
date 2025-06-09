@@ -53,10 +53,16 @@
 
 .creator-stats {
   display: flex;
-  gap: var(--space-4);
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
   font-size: 0.95rem;
   color: var(--color-dark);
   margin: 0;
+  align-items: center;
+}
+
+.creator-stats span {
+  white-space: nowrap;
 }
 
 .creator-stats strong {

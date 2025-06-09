@@ -129,10 +129,7 @@ button.btn-secondary:hover {
 }
 
 .edit-btn-wrapper {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
+  margin-top: 1rem;
 }
 
 #edit-profile-btn {
